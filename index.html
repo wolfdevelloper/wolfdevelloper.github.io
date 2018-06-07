@@ -1,33 +1,41 @@
-<!DOCTYPE html>
-<html>
-<head lang="pt-br">
+<html><head lang="pt-br">
+    <title>Larashoes Sapatilhas</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 
-    <title>Larashoes</title>
+
     <style>
 
+        body{position: relative;
+}
         h1{
             color: white;
         }
+        h2{color:white}
         h3
         {
             color: hotpink;
+        }
+        h4{
+            color: white;
+
         }
         p{color: white}
 
 .navbar{
    background-color: black;
 }
-.container-fluid{      background-color: mistyrose;
-                 background-size: cover;
-                 background-image: url("img/bg-site.jpg");
+.container-fluid{
+    background-color: mistyrose;
+    background-size: cover;
+    background-image: url("img/bg-site.jpg");
     width: 100%;
     height: 100%;
 
@@ -37,31 +45,36 @@
         width: 70%;
         height: 70%;
         }
+        </style>
+    </head>
 
-
-    </style>
-</head>
-
-<body>
-<nav class="navbar navbar-expand-md  navbar-dark">
-
-    <a class="navbar-brand" href="#">
-        <img class="img-fluid  rounded-circle" src="img/Logotipo-lara.png" alt="Chania"  style="width:100px;">
-
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<nav class="navbar navbar-expand-md  navbar-dark fixed-top">
+    <!-- logo do navbar -->
+    <a class="navbar-brand" href="#section 1">
+        <img class="img-fluid  rounded-circle" src="img/Logotipo-lara.png" alt="logo" style="width:100px;">
     </a>
+    <!-- botao quando a tela diminui -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span></button>
+
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
-    ​ <ul class="navbar-nav">
+    &#8203; <ul class="navbar-nav">
     <li class="nav-item">
         <a class="nav-link" href="https://pt-br.facebook.com/pg/larashoesatacado/posts/?ref=page_internal">Nossos Produtos</a>
     </li>
 
     <li class="nav-item">
-        <a class="nav-link" href="https://www.google.com.br/maps/dir/-23.6815272,-46.8562438/Lara+Shoes+Atacado,+445,+Estr.+Kaiko+-+Ch%C3%A1caras+Embu+Colonial,+Embu+das+Artes+-+SP,+06843-225/@-23.6609226,-46.8649796,14z/data=!4m9!4m8!1m1!4e1!1m5!1m1!1s0x94cfab7992acb40f:0xd84ad6dd1692cb86!2m2!1d-46.860156!2d-23.655982">Como Chegar</a>
+        <a class="nav-link" href="https://goo.gl/maps/TbfJdPnqgH82">Como Chegar</a>
     </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">PROMOÇÕES VIGENTES</a>
+            <a class="nav-link" href="#section2">Sobre</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#section3">Nossas Lojas</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#section4">Promoções Vigentes</a>
         </li>
 </ul>
     </div>
@@ -69,55 +82,55 @@
 
 
 
-<div class="container-fluid">
+<div id="section1" class="container-fluid" style="padding-top: 145px;padding-bottom:100px">
 
-    <div class="row">
-        <div class="col-sm-12 col-12 text-center"style="align-content: center">
+
+        <div class="col-sm-12 col-12 text-center" style="align-content: center">
                     <h1>Lara Shoes Atacado</h1>
                     <h3>Mais de 600 Modelos!</h3>
                     <p>Endereço: Estrada Kaiko, nº 445 - Embu das Artes - São Paulo - Bairro Maria Auxiliadora</p>
-                    <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5511940619300" class="btn btn-info" role="button">Entre em contato pelo Whatsapp</a>
+                    <a href="http://api.whatsapp.com/send?1=pt_BR&amp;phone=5511940619300" class="btn btn-info" role="button">Entre em contato pelo Whatsapp</a>
 
             <!-- coursel -->
             <div class="container mt-3">
 
-                <h2>Carousel</h2>
+                
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
                     <!-- Indicators -->
                     <ul class="carousel-indicators">
-                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#myCarousel" data-slide-to="1"></li>
-                        <li data-target="#myCarousel" data-slide-to="2"></li>
-                        <li data-target="#myCarousel" data-slide-to="3"></li>
-                        <li data-target="#myCarousel" data-slide-to="4"></li>
+                        <li data-target="#myCarousel" data-slide-to="0" class=""></li>
+                        <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+                        <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+                        <li data-target="#myCarousel" data-slide-to="3" class=""></li>
+                        <li data-target="#myCarousel" data-slide-to="4" class="active"></li>
                         <li data-target="#myCarousel" data-slide-to="5"></li>
                     </ul>
 
                     <!-- The slideshow -->
                     <div class="carousel-inner">
-                        <div class="carousel-item active" >
-                            <img src="img/1.jpg" alt="larashoes atacado" width="430" ​height="500" >
+                        <div class="carousel-item">
+                            <img src="img/1.jpg" alt="larashoes atacado" width="430" &#8203;height="500">
                         </div>
 
                         <div class="carousel-item">
-                            <img src="img/2.jpg" alt="sapatilhas" width="430" ​height="500">
+                            <img src="img/2.jpg" alt="sapatilhas" width="430" &#8203;height="500">
                         </div>
 
                         <div class="carousel-item">
-                            <img src="img/3.jpg" alt="lubela" width="430" ​height="500">
+                            <img src="img/3.jpg" alt="lubela" width="430" &#8203;height="500">
                         </div>
 
                         <div class="carousel-item">
-                            <img src="img/4.jpg" alt="calçados" width="430" ​height="500">
+                            <img src="img/4.jpg" alt="calçados" width="430" &#8203;height="500">
+                        </div>
+
+                        <div class="carousel-item active">
+                            <img src="img/5.jpg" alt="crianças" width="430" &#8203;height="500">
                         </div>
 
                         <div class="carousel-item">
-                            <img src="img/5.jpg" alt="crianças" width="430" ​height="500">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="img/6.jpg" alt="salto" width="430" ​height="500" >
+                            <img src="img/6.jpg" alt="salto" width="430" &#8203;height="500">
                         </div>
                     </div>
 
@@ -133,34 +146,54 @@
             </div>
         </div>
 
-    </div>
-    <div class="row">
-        <h1>Sobre</h1>
-        <p>Loja de Fábrica onde contamos com mais de 600 modelos de sapatilhas com a
-            possibilidade de do cliente adquirir quantos pares desejar.</p>
-        <p>Você pode adquirir nossos produtos em loja sem necessidade de uma compra mínima ou qualquer documento, e também pode
-        adquirir nossas sapatilhas em sua casa pelos correios</p>
+    </div><div id="section2" class="container-fluid" style="padding-top:70px;padding-bottom:70px">
+    <h1>Sobre</h1>
+    <p>Loja de Fábrica onde contamos com mais de 600 modelos de sapatilhas com a
+        possibilidade do cliente adquirir quantos pares desejar.</p>
+    <p>Você pode adquirir nossos produtos em loja sem necessidade de uma compra mínima ou qualquer documento, e também pode
+        adquirir nossas sapatilhas em sua casa pelos correios, para saber mais, entre em contato pelo whatsapp</p>
+</div>
+
+<div id="section3" class="container-fluid bg-secondary" style="padding-top:70px;padding-bottom:70px">
+
+    <h2>Nossas Lojas</h2>
+    <p>Contamos Com duas Lojas, lara shoes atacado e lara shoes varejo</p>
+     <div class="media border p-3">
+         <img src="img/Logotipo-lara.png" alt="larashoes atacado" class="mr-3 mt-3 rounded-circle" style="width: 60px;">
+         <div class="media-body">
+             <h4>Lara Shoes Atacado <small><i>Estrada Kaiko, n 445 - Embu das Artes  - Sp </i></small></h4>
+             <p>texto para seo google orientado para o marketing ainda em produção</p>
+
+         </div>
+      </div>
 
 
-    </div>
-    <div class="row">
 
-        <h1>Promoção Vigente</h1>
-        <h2>Acima de 20 Pares $ 14,99</h2>
 
-    </div>
-    <div class="row">
 
-        <h1>Nossas Lojas</h1>
-        <h3>Contamos Com duas Lojas, lara shoes atacado e lara shoes varejo</h3>
 
-    </div>
+         <div class="media border p-3">
+             <img src="img/Logotipo-lara.png" alt="larashoes atacado" class="mr-3 mt-3 rounded-circle" style="width: 60px;">
+             <div class="media-body">
+                 <h4>Lara Shoes Varejo <small><i>Estrada Kaiko, n 445 - Embu das Artes  - Sp </i></small></h4>
+                 <p>texto para seo google orientado para o marketing ainda em produção</p>
+
+             </div>
+          </div>
+          </div>                                                                                                              
+
+
+
+
+
+
+
+<div id="section4" class="container-fluid bg-secondary" style="padding-top:70px;padding-bottom:70px">
+    <h1>Promoção Vigente</h1>
+    <h2>Qualquer sapatilha independente da quantidade $ 14,99</h2>
 </div>
 
 
 
+</body></html>
 
-
-</body>
-
-</html>
