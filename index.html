@@ -1,356 +1,940 @@
-<html><head lang="pt-br">
-    <title>Larashoes Sapatilhas</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- Material Design Bootstrap -->
-    <link href="css/mdb.min.css" rel="stylesheet">
-    <!-- Your custom styles (optional) -->
-    <link href="css/style.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <title>Wolfdeveloper</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
 
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
-    <style>
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-        body{position: relative;
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
 
+  <!-- =======================================================
+    Theme Name: Victor de Souza Alves
+    Theme URL: 
+    Author: wolfdeveloper ltda
+    License: wolfdeveloper-01
+  ======================================================= -->
+</head>
 
-}
+<body id="page-top">
 
-        h3
-        {
-            color: hotpink;
-        }
-
-
-
-.navbar{
-   background-image: url("img/nav-bg.jpg");
-   background-repeat: no-repeat;
-    max-width: 100%;
-    height: auto;
-    background-size: 100% 100%;
-
-
-}
-.navbar-nav{
-    background-color:rgba(0, 0, 0, 0.6);
-    font-size: larger;
-}
-.container-fluid{
-
-
-    width: 100%;
-    height: 100%;
-
-}
-.container{
-
-max-height: 50%;
-}
-
-.row{
-    max-height: 30%;
-
-}
-.mb-5{
-
-    max-height: 10%;
-}
-
-.carousel-caption{
-    background-color:rgba(0, 0, 0, 0.4);
-
-
-}
-        .carousel-inner img{
-        width: 100%;
-        height: 100%;
-        }
-
-        txt-fixed {
-            position:absolute;
-            top:45%;
-            left:45%;
-        }
-
-
-
-        </style>
-    </head>
-
-<row data-spy="scroll" data-target=".navbar" data-offset="50">
-
-<nav class="navbar navbar-expand-xl  navbar-dark   fixed-top ">
-    <!-- logo do navbar -->
-    <a class="navbar-brand " href="#section 1">
-        <img class="img-fluid  rounded-circle" src="img/Logotipo-lara.png" alt="logo" style="width:80px; border-radius: 10px">
-    </a>
-    <!-- botao quando a tela diminui -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon"></span></button>
-
-
-
-
-    <div class="collapse navbar-collapse " id="collapsibleNavbar">
-         <ul class="navbar-nav ">
-    <li class="nav-item">
-        <a class="nav-link" href="https://pt-br.facebook.com/pg/larashoesatacado/posts/?ref=page_internal">Nossos Produtos</a>
-    </li>
-
-    <li class="nav-item">
-        <a class="nav-link" href="https://goo.gl/maps/TbfJdPnqgH82">Como Chegar</a>
-    </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#section2">Sobre</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#section3">Promoçoes Vigentes</a>
-        </li>
-
-</ul>
+  <!--/ Nav Star /-->
+  <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll" href="#page-top">Wolfdeveloper</a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#mission">Missão/Visão</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#service">Serviços</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#abolt">Sobre</a>
+          </li>
+          <!---<li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#app">Aplicativos</a>
+          </li>-->
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#project">Projeto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Orçamentos</a>
+          </li>
+        </ul>
+      </div>
     </div>
-</nav>
+  </nav>
+  <!--/ Nav End /-->
+
+  <!--/ Intro Skew Star /-->
+  <div id="mission" class="intro route bg-image" style="background-image: url(img/intro-bg.jpg)">
+    <div class="overlay-itro"></div>
+    <div class="intro-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          <!--<p class="display-6 color-d">Hello, world!</p>-->
+          <h1 class="intro-title mb-4">Wolfdeveloper</h1>
+          <p class="intro-subtitle"><span class="text-slider-items">Desenvolvimento de Sites,Desenvonvolvimento de Aplicativos,Desenvolvimento de Software,Desenvolvimento de frimeworks,Manutenção de Computadores</span><strong class="text-slider"></strong></p>
+          <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/ Intro Skew End /-->
+  <!--Missao Começo-->
+  <div class="testimonials paralax-mf bg-image" style="background-image: url(img/overlay-bg.jpg)">
+    <div class="overlay-mf"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div id="testimonial-mf" class="owl-carousel owl-theme">
+
+            <div class="testimonial-box">
+              <div class="author-test">
+                <img src="img/vision.png" alt="icone-visao" class="rounded-circle b-shadow-a">
+                <span class="author">Visão</span>
+              </div>
+              <div class="content-test">
+                <p class="description lead">
+                  Atingir reconhecimento social como a empresa de consultoria de maior qualidade em desenvolvimento web e mobile. 
+                </p>
+                <span class="comit"><i class="fa fa-quote-right"></i></span>
+              </div>
+            </div>
+
+  <div class="testimonial-box">
+    <div class="author-test">
+      <img src="img/mission.png" alt="icone-visao" class="rounded-circle b-shadow-a">
+      <span class="author">Missão</span>
+    </div>
+    <div class="content-test">
+      <p class="description lead">
+        Colaborar com Empresas Parceiras na Integração Tecnologica utilizando técnicas avançadas de desing conceituado e elegante e codigos com total confiabilidade, ususabilidade
+        e fácil manutenção respeitando os principios SOLID.
+      </p>
+      <span class="comit"><i class="fa fa-quote-right"></i></span>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--Missão FInal-->
+  <!--/ Section Services Star /-->
+  <section id="service" class="services-mf route">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="title-box text-center">
+            <h3 class="title-a">
+              Serviços
+            </h3>
+            <p class="subtitle-a">
+              Consultorias que prestamos
+            </p>
+            <div class="line-mf"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="ion-monitor"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">Web Design</h2>
+              <p class="s-description text-center">
+                A <b>Wolfdeveloper</b> desenvolve seu website, cria sua marca e toda identidade visual da sua empresa
+                ou projeto focando em resultados ágeis e rápidos.
+                Solicite um Orçamento!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="ion-code-working"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">Web Development</h2>
+              <p class="s-description text-center">
+              Soluções completa e profissional para criação de sites lojas virtuais e <b>softwares</b> em geral,
+              focada em SEO e boas práticas, que garante uma indexibilidade maior para os buscadores, sites projetados para gerar
+              negócio e resultados.
+              Solicite um Orçamento!
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="ion-android-phone-portrait"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">Desenvolvimento Mobile</h2>
+              <p class="s-description text-center">
+               Criamos seu aplicativo de alto desempenho com requisições a api e segurança de seus dados, utilizando
+               tambem técnicas avançadas de criação de layot e conceitos bem aplicados dos padrões de projeto.
+               Solicite um Orçamento!
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="ion-paintbrush"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">Desing Gráfico</h2>
+              <p class="s-description text-center">
+                Buscamos a excelência no desing do seu negócio estruturando a página de acordo com os padrões prediletos
+                do mercado utilizando técnicas de enquadramento resonsivo em qualquer tipo de tela. Solicite um Orçamento!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="ion-stats-bars"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">Marketing Digital</h2>
+              <p class="s-description text-center">
+                Divulgue sua empresa com a <b>Wolfdeveloper</b>, escolha a melhor maneira, seja com 
+                Otimização de sites SEO, Links Patrocinados ou nas Redes Sociais. Solicite um Orçamento!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="ion-android-cloud-circle"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Suporte Técnico</h2>
+                <p class="s-description text-center">
+                 Oferecemos serviços de manutenção de Computadores e notebook, troca de peça, reinstalação de sistemas
+                 e configurações de rede e demais serviços de informática, Solicite um orçamento!
+                </p>
+              </div>
+            </div>
+          </div>
+
+      </div>
+    </div>
+  </section>
+  <!--/ Section Services End /-->
+
+<!--trabalhos completos session-->
+
+  <div class="section-counter paralax-mf bg-image" style="background-image: url(img/counters-bg.jpg)">
+    <div class="overlay-mf"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3 col-lg-3">
+          <div class="counter-box">
+            <div class="counter-ico">
+              <span class="ico-circle"><i class="ion-checkmark-round"></i></span>
+            </div>
+            <div class="counter-num">
+              <p class="counter">14</p>
+              <span class="counter-text">Trabalho Completos</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 col-lg-3">
+          <div class="counter-box pt-4 pt-md-0">
+            <div class="counter-ico">
+              <span class="ico-circle"><i class="ion-ios-calendar-outline"></i></span>
+            </div>
+            <div class="counter-num">
+              <p class="counter">4</p>
+              <span class="counter-text">tempo no mercado</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 col-lg-3">
+          <div class="counter-box pt-4 pt-md-0">
+            <div class="counter-ico">
+              <span class="ico-circle"><i class="ion-ios-people"></i></span>
+            </div>
+            <div class="counter-num">
+              <p class="counter">220</p>
+              <span class="counter-text">TOTAL CLIENTS</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 col-lg-3">
+          <div class="counter-box pt-4 pt-md-0">
+            <div class="counter-ico">
+              <span class="ico-circle"><i class="ion-ribbon-a"></i></span>
+            </div>
+            <div class="counter-num">
+              <p class="counter">8</p>
+              <span class="counter-text">Participação em Projetos</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--trabalhos completos final -->
+
+  
+
+<!--Kayque Rodrigês-->
+  <section id="about" class="about-mf sect-pt4 route">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="box-shadow-full">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col-sm-6 col-md-5">
+                    <div class="about-img">
+                      <img src="img/kayque.jpeg" class="img-fluid rounded b-shadow-a" alt="">
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-7">
+                    <div class="about-info">
+                      <p><span class="title-s">Name: </span> <span>Kayque Rodriguês</span></p>
+                      <p><span class="title-s">Profile: </span> <span>full stack developer pleno</span></p>
+                      <p><span class="title-s">Email: </span> <span>contact@example.com</span></p>
+                      <p><span class="title-s">Phone: </span> <span>(11) 98470-3336</span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="skill-mf">
+                  <p class="title-s">Skill</p>
+                  <span>Java</span> <span class="pull-right">85%</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                  <span>Kotlin</span> <span class="pull-right">75%</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                  <span>API Create</span> <span class="pull-right">80%</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                  <span>Android</span> <span class="pull-right">90%</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="about-me pt-4 pt-md-0">
+                  <div class="title-box-2">
+                    <h5 class="title-left">
+                      sobre
+                    </h5>
+                  </div>
+                  <p class="lead">
+                   Desenvolvedor Pleno hábil em manutenção de frameworks e criação de API.
+                  </p>
+                  <p class="lead">
+                    Lider no desenvolvimento Android e Beck-end de aplicações.
+                  </p>
+                  <p class="lead">
+                    Persistente e dedicado, sempre em evolução de conhecimento em busca de novas tecnologias
+                  </p>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!--Kayque Final-->
 
 
+    <!--rafael aquino perfil inicio-->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="box-shadow-full">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col-sm-6 col-md-5">
+                    <div class="about-img">
+                      <img src="img/rafael-aquino.jpeg" class="img-fluid rounded b-shadow-a" alt="">
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-7">
+                    <div class="about-info">
+                      <p><span class="title-s">Name: </span> <span>Rafael Aquino</span></p>
+                      <p><span class="title-s">Profile: </span> <span>full stack developer e SEO Pleno</span></p>
+                      <p><span class="title-s">Email: </span> <span>contact@example.com</span></p>
+                      <p><span class="title-s">site: </span> <span>http://webaquino.com.br</span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="skill-mf">
+                  <p class="title-s">Skill</p>
+                  <span>HTML</span> <span class="pull-right">85%</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                  <span>CSS</span> <span class="pull-right">75%</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                  <span>SEO</span> <span class="pull-right">75%</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                  <span>JAVASCRIPT</span> <span class="pull-right">90%</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="about-me pt-4 pt-md-0">
+                  <div class="title-box-2">
+                    <h5 class="title-left">
+                      Sobre
+                    </h5>
+                  </div>
+                  <p class="lead">
+                    Profisional de marketing granjeando novos conhecimentos na area de desenvolvimento de softwares buscando soluções rápidas e engajadoras.
+            
+                  </p>
+                  <p class="lead">
+                    Dominio em linguágens da web e experiência em linguagens visual, operando nos mais diversos setores do marketing.
+                  </p>
+                  <p class="lead">
+                    Hábil com desing e arquiteturas complexas de sistema.
+                  </p>
+                 
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Rafael Final-->
 
-<div id="section1" class="container-fluid" style="padding-top: 0;padding-bottom:-10px;  background-color: silver;">
+
+    <!--Victor Alves-->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="box-shadow-full">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col-sm-6 col-md-5">
+                    <div class="about-img">
+                      <img src="img/victor.jpg" class="img-fluid rounded b-shadow-a" alt="">
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-7">
+                    <div class="about-info">
+                      <p><span class="title-s">Name: </span> <span>Victor Alves</span></p>
+                      <p><span class="title-s">Profile: </span> <span>full stack developer</span></p>
+                      <p><span class="title-s">Email: </span> <span>victorsouzz@gmail.com</span></p>
+                      <p><span class="title-s">Phone: </span> <span>(11) 98470-3336</span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="skill-mf">
+                  <p class="title-s">Habilidades</p>
+                  <span>HTML</span> <span class="pull-right">85%</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                  <span>CSS</span> <span class="pull-right">75%</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                  <span>Java</span> <span class="pull-right">50%</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                  <span>JAVASCRIPT</span> <span class="pull-right">90%</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="about-me pt-4 pt-md-0">
+                  <div class="title-box-2">
+                    <h5 class="title-left">
+                      Sobre
+                    </h5>
+                  </div>
+                  <p class="lead">
+                    Hábilidade em alavancar frameworks agéis e de fácil manutenção, fácilidade de comunicação e solucionar problemas propostos.
+                  </p>
+                  <p class="lead">
+                    5 anos como programador java, atualmente com os estudos voltados ao framework de javascrip angular afim de criar excelentes desings e aplicações web.
+                  </p>
+                  <p class="lead">
+                   Hábil para reparos em computadores, possuí grande hábilidade e prudencia em troca de telas, teclados de notebok e outros.
+                  </p>
+                  
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!--/ Victor Final /-->
 
 
+    <!--/ Section projetos realizados inicio /-->
+  <section id="project" class="blog-mf sect-pt4 route">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="title-box text-center">
+            <h3 class="title-a">
+             Projetos Realizados
+            </h3>
+            <p class="subtitle-a">
+              Alguns de nossos clientes satisfeitos.
+            </p>
+            <div class="line-mf"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card card-blog">
+            <div class="card-img">
+              <a href="http://www.kapitalis.com.br"><img src="img/site-1.jpeg" alt="" class="img-fluid"></a>
+            </div>
+            <div class="card-body">
+              <div class="card-category-box">
+                <div class="card-category">
+                  <h6 class="category">WebSite</h6>
+                </div>
+              </div>
+              <h3 class="card-title"><a href="blog-single.html">Kapitalis Gestão</a></h3>
+              <p class="card-description">
+                Site e marca desenvolvido com recursos de google SEO bem estruturado, alem de ser totalmente responsivo adequando-se a qualquer tamanho de tela.
+              </p>
+            </div>
+            <div class="card-footer">
+              <div class="post-author">
+                <a href="#">
+                  <img src="img/rafael-aquino.jpeg" alt="" class="avatar rounded-circle">
+                  <span class="author">Rafael Aquino</span>
+                </a>
+              </div>
+              <div class="post-date">
+                <span class="ion-ios-clock-outline"></span> 2018
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-blog">
+            <div class="card-img">
+              <a href="http://brz-experts.com.br"><img src="img/site-2.jpeg" alt="" class="img-fluid"></a>
+            </div>
+            <div class="card-body">
+              <div class="card-category-box">
+                <div class="card-category">
+                  <h6 class="category">Identidade Visual</h6>
+                </div>
+              </div>
+              <h3 class="card-title"><a href="blog-single.html">BRZ-Expert Engenharia</a></h3>
+              <p class="card-description">
+                Entregamos a identidade visual da marca na internet com qualidade e desing moderno levando a empresa a frente de seus concorrêntes.
+              </p>
+            </div>
+            <div class="card-footer">
+              <div class="post-author">
+                <a href="#">
+                  <img src="img/rafael-aquino.jpeg" alt="" class="avatar rounded-circle">
+                  <span class="author">Rafael Aquino</span>
+                </a>
+              </div>
+              <div class="post-date">
+                <span class="ion-ios-clock-outline"></span> 2018
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-blog">
+            <div class="card-img">
+              <a href="blog-single.html"><img src="img/site-3.jpeg" alt="" class="img-fluid"></a>
+            </div>
+            <div class="card-body">
+              <div class="card-category-box">
+                <div class="card-category">
+                  <h6 class="category">E-commerce</h6>
+                </div>
+              </div>
+              <h3 class="card-title"><a href="blog-single.html">Daze Modas</a></h3>
+              <p class="card-description">
+                Entregamos um E-commerce completo com possibilidade de compras no site e painel de manutenção de itens, também altamente renderizável a 
+                todos os dispositivos.
+              </p>s
+            </div>
+            <div class="card-footer">
+              <div class="post-author">
+                <a href="#">
+                  <img src="img/rafael-aquino.jpeg" alt="" class="avatar rounded-circle">
+                  <span class="author">Rafael Aquino</span>
+                </a>
+              </div>
+              <div class="post-date">
+                <span class="ion-ios-clock-outline"></span> 2018
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ Section projetos final-->
 
+  <!--/ snacktime session em contrução /-->
+  <!--
+  <section id="work" class="portfolio-mf sect-pt4 route">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="title-box text-center">
+            <h3 class="title-a">
+             snacktime
+            </h3>
+            <p class="subtitle-a">
+              Lorem ipsum, dolor sit amet 
+              consectetur adipisicing elit.
+            </p>
+            <div class="line-mf"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="img/work-1.jpg" data-lightbox="gallery-mf">
+              <div class="work-img">
+                <img src="img/work-1.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Lorem impsum dolor</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <span class="ion-ios-plus-outline"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="img/work-2.jpg" data-lightbox="gallery-mf">
+              <div class="work-img">
+                <img src="img/work-2.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Loreda Cuno Nere</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <span class="ion-ios-plus-outline"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="img/work-3.jpg" data-lightbox="gallery-mf">
+              <div class="work-img">
+                <img src="img/work-3.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Mavrito Lana Dere</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <span class="ion-ios-plus-outline"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="img/work-4.jpg" data-lightbox="gallery-mf">
+              <div class="work-img">
+                <img src="img/work-4.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Bindo Laro Cado</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <span class="ion-ios-plus-outline"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="img/work-5.jpg" data-lightbox="gallery-mf">
+              <div class="work-img">
+                <img src="img/work-5.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Studio Lena Mado</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <span class="ion-ios-plus-outline"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="img/work-6.jpg" data-lightbox="gallery-mf">
+              <div class="work-img">
+                <img src="img/work-6.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Studio Big Bang</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2017</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <span class="ion-ios-plus-outline"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
 
-            <!-- coursel -->
+-->
+ <!--Final snacktime-->
 
-<row class="container-fluid">
-                
-                <div id="myCarousel" class="carousel slide container-fluid" data-ride="carousel">
-
-                    <!-- Indicators -->
-                    <ul class="carousel-indicators">
-                        <li data-target="#myCarousel" data-slide-to="0" class=""></li>
-                        <li data-target="#myCarousel" data-slide-to="1" class=""></li>
-                        <li data-target="#myCarousel" data-slide-to="2" class=""></li>
-                        <li data-target="#myCarousel" data-slide-to="3" class=""></li>
-                        <li data-target="#myCarousel" data-slide-to="4" class="active"></li>
-                        <li data-target="#myCarousel" data-slide-to="5"></li>
-                    </ul>
-
-                    <!-- The slideshow -->
-                    <div class="carousel-inner">
-                        <div class = "carousel-caption">
-
-
-
+  <!--/ Section Contact-Footer Star /-->
+  <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(img/overlay-bg.jpg)">
+    <div class="overlay-mf"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="contact-mf">
+            <div id="contact" class="box-shadow-full">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="title-box-2">
+                    <h5 class="title-left">
+                      Solicite um Orçamento
+                    </h5>
+                  </div>
+                  <div>
+                      <form action="" method="post" role="form" class="contactForm">
+                      <div id="sendmessage">Sua Menssagem foi enviada, obrigado, em breve entraremos em contato!</div>
+                      <div id="errormessage"></div>
+                      <div class="row">
+                        <div class="col-md-12 mb-3">
+                          <div class="form-group">
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Seu Nome" data-rule="minlen:4" data-msg="A menssagem precisa conter mais de 4 caracteres" />
+                            <div class="validation"></div>
+                          </div>
                         </div>
-                        <div class="carousel-item">
-                            <img src="img/1.jpg" alt="larashoes atacado" style="width:100%">
-                            <div class = "carousel-caption">
-
-                                <h1>Lara Shoes Atacado</h1>
-                                <h3>Mais de 600 Modelos de sapatilhas no atacado e varejo</h3>
-                                <p>Endereço: Estrada Kaiko, nº 445 - Embu das Artes - São Paulo - Bairro Maria Auxiliadora</p>
-                                <a href="http://api.whatsapp.com/send?1=pt_BR&amp;phone=5511940619300" class="btn btn-info" role="button">Entre em contato pelo Whatsapp</a>
-
+                        <div class="col-md-12 mb-3">
+                          <div class="form-group">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Seu E-mail" data-rule="email" data-msg="informe um e-mail válido" />
+                            <div class="validation"></div>
+                          </div>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Assunto" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                              <div class="validation"></div>
                             </div>
                         </div>
-
-                        <div class="carousel-item">
-                            <img src="img/2.jpg" alt="sapatilhas" width="430" height="500">
+                        <div class="col-md-12 mb-3">
+                          <div class="form-group">
+                            <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="escreva aqui sua menssagem" placeholder="Message"></textarea>
+                            <div class="validation"></div>
+                          </div>
                         </div>
-
-                        <div class="carousel-item">
-                            <img src="img/3.jpg" alt="lubela" width="430"height="500">
+                        <div class="col-md-12">
+                          <button type="submit" class="button button-a button-big button-rouded">Solicitar Orçamento</button>
                         </div>
-
-                        <div class="carousel-item">
-                            <img src="img/4.jpg" alt="calçados" width="430" height="500">
-                        </div>
-
-                        <div class="carousel-item active">
-                            <img src="img/5.jpg" alt="crianças" width="430" height="500">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="img/6.jpg" alt="salto" width="430" height="500">
-                        </div>
-                    </div>
-
-                    <!-- Left and right controls -->
-                    <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </a>
-                    <a class="carousel-control-next" href="#myCarousel" data-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </a>
+                      </div>
+                    </form>
+                  </div>
                 </div>
-</row>
-            </div>
-
-
-<div id="section2" class="container-fluid" style="padding-top:110px;padding-bottom:800px; margin-bottom: 800px">
-
-
-    <div class="w3-container w3-red">
-        <h1>Sobre</h1>
-    </div>
-    <div class="media border p-1">
-
-
-        <p>Loja de calçados, onde contamos com mais de 600 modelos de sapatilhas no atacado direto da fabrica,
-        com a
-     possibilidade do cliente adquirir quantos pares desejar para arrasar na passarela
-        calçados femininos.</p><br>
-        <p>Você pode adquirir nossos produtos em loja sem necessidade de uma compra mínima ou qualquer documento, e também
-        pode
-            adquirir nossas sapatilhas em sua casa pelos correios, para saber mais, entre em contato pelo whatsapp.</p>
-    </div>
-
-    <div class ="card-columns" style="margin-left: 15%;margin-top: 50px;">
-        <div class="card " style="width:300px">
-            <img class="card-img-top" src="img/larashoes-fachada.jpg" alt="larashoes atacado" >
-            <div class="card-body">
-
-                <div class="media-body">
-                    <h4 class="card-title">Lara Shoes Atacado</h4> <p class = card-text>(11) 4385-1551</p>
-                    <p class="card-text">Estrada Kaiko, 445 -  Bairro: Maria Auxiliadora (sentido bairro ressaca)
-                        Embu das Artes - SP</p>
-                    <p class = card-text>  Abrimos de Segunda a Sábado
-                    Das 09h às 18h
-                    Domingo e Feriado das 9h às 17h </p>
-
-
-                    <a href="https://www.facebook.com/pg/larashoesatacado/posts/?ref=page_internal" class="btn btn-primary">Facebook</a>
-                    <a href="https://www.instagram.com/larashoesatacado/" class="btn btn-primary">Instagram</a>
-
+                <div class="col-md-6">
+                  <div class="title-box-2 pt-4 pt-md-0">
+                    <h5 class="title-left">
+                      Entre em Contato
+                    </h5>
+                  </div>
+                  <div class="more-info">
+                    <p class="lead">
+                      Wolfdeveloper Desenvolvendo as melhores aplicação pro seu negócio!
+                    </p>
+                    <ul class="list-ico">
+                      <li><span class="ion-ios-location"></span> Brasil - SP</li>
+                      <li><span class="ion-ios-telephone"></span> (11) 98470-3336</li>
+                      <li><span class="ion-email"></span> wolfdevelloper@gmail.com</li>
+                    </ul>
+                  </div>
+                  <div class="socials">
+                    <ul>
+                      <li><a href=""><span class="ico-circle"><i class="ion-social-facebook"></i></span></a></li>
+                      <li><a href=""><span class="ico-circle"><i class="ion-social-instagram"></i></span></a></li>
+                      <li><a href=""><span class="ico-circle"><i class="ion-social-twitter"></i></span></a></li>
+            
+                    </ul>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-
-
-
-        <div class="card " style="width:300px">
-            <img class="card-img-top" src="img/lara-varejo.jpg" alt="larashoes atacado" >
-            <div class="card-body">
-
-                <div class="media-body">
-                    <h4 class="card-title">Lara Shoes Varejo</h4><p class = card-text>(11)4557-1944</p> <p class="card-text">Av. Elias Yasbek, 1386 | 1975 (em frente ao pronto socorro)
-                    Bairro: tingidor/centro - Embu das Artes - SP</p>
-                    <p class = card-text>  Abrimos de Segunda a Sábado
-                        Das 09h às 18h
-                        Domingo e Feriado das 9h às 17h </p>
-                    <a href="https://www.facebook.com/pg/larashoesembu/posts/?ref=page_internal" class="btn btn-primary">Facebook</a>
-                    <a href="https://www.instagram.com/lara_shoes_varejo/" class="btn btn-primary">Instagram</a>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
-
-
-
-</div>
-
-<div id="section3" class="container-fluid "style="padding-top:90px;padding-bottom:470px ">
-
-    <!-- Card Light -->
-    <div class="card">
-
-        <!-- Card image -->
-        <div class="view overlay">
-            <img class="card-img-top" src="img/promo.jpg" alt="promocao" width="0" height="350">
-            <a>
-                <div class="mask rgba-white-slight"></div>
-            </a>
-        </div>
-
-        <!-- Card content -->
-        <div class="card-body">
-
-
-            <!-- Title -->
-            <h4 class="card-title">Sapatilhas na Promoção</h4>
-            <hr>
-            <!-- Text -->
-            <p class="card-text">Qualquer sapatilha independente da quantidade pelo valor de R$ 14,99 sem troca, e sem compra mínima, promoção válida apenas para compras em loja!
-            </p>
-            <!-- Link -->
-
-
-        </div>
-
-    </div>
-    <!-- Card Light -->
-
-
-
-           </div>
-
-
-
-
-
-
-
-<!-- Footer -->
-<footer class="page-footer font-small stylish-color-dark  darken-3 mt-4">
-
-    <!-- Footer Links -->
-    <div class="container">
-
-        <!-- Grid row-->
+    <footer>
+      <div class="container">
         <div class="row">
-
-            <!-- Grid column -->
-            <div class="col-md-12 py-5">
-                <div class="mb-5 flex-center">
-
-                    <!-- Facebook -->
-                    <a class="fb-ic" href="https://pt-br.facebook.com/pg/larashoesatacado/posts/?ref=page_internal">
-                        <i class="fa fa-facebook fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-
-                    </a>
-
-                    <!--Instagram-->
-                    <a class="ins-ic" href="https://www.instagram.com/larashoesatacado/">
-                        <i class="fa fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                    </a>
-                    <!-- e-mail -->
-                    <p><i class="fa fa-envelope mr-3 fa-2x fa-lg"></i> contato@larashoes.com </p>
-                    <!-- fixo -->
-
-
-                </div>
+          <div class="col-sm-12">
+            <div class="copyright-box">
+              <p class="copyright">&copy; Copyright <strong>Wolfdeveloper</strong>. All Rights Reserved</p>
+              <div class="credits">
+                
+                Designed by <a href="https://www.wolfdeveloper.com/">Wolfdeveloper</a>
+              </div>
             </div>
-
-            <!-- Grid column -->
-
-
+          </div>
         </div>
-        <!-- Grid row-->
+      </div>
+    </footer>
+  </section>
+  <!--/ Section Contact-footer End /-->
 
-    </div>
-    <!-- Footer Links -->
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <div id="preloader"></div>
+  
 
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2018 Copyright:
-        <a href="https://wolfdevelloper.github.io"> wolfdeveloper.com</a>
-    </div>
-    <!-- Copyright -->
+  
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-</footer>
-<!-- Footer -->
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
+  <!-- Custom scripts for this template -->
+  <script src="js/resume.min.js"></script>
 
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/popper/popper.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/counterup/jquery.waypoints.min.js"></script>
+  <script src="lib/counterup/jquery.counterup.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="lib/typed/typed.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
 
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
 
-</body></html>
-
+</body>
+</html>
