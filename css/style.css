@@ -239,6 +239,19 @@ a:hover {
   margin-right: 10px;
 }
 
+/*------/ Ico Nav /------*/
+
+.ico-nav {
+  height: 100px;
+  width: 100px;
+  font-size: 2rem;
+  
+  line-height: 1.55;
+  margin: 0 auto;
+  text-align: center;
+  
+  display: block;
+}
 /*------/ Ico Circle /------*/
 
 .ico-circle {
