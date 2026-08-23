@@ -711,6 +711,47 @@ a:hover {
   padding: 2.5rem 1.3rem;
   border-radius: 1rem;
   margin-bottom: 3rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-box .service-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+
+.service-box .s-description {
+  flex: 1 1 auto;
+}
+
+.service-box .button {
+  align-self: center;
+  margin-top: 1rem;
+}
+
+/* compensa a altura da navbar fixa em paginas sem hero */
+.page-offset-nav {
+  padding-top: 11rem;
+}
+
+.card-blog {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.card-blog .app-thumb {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.card-blog .app-thumb--phone {
+  object-fit: contain;
+  background-color: #0a0a0a;
+  padding: .5rem 0;
 }
 
 .service-box:hover .ico-circle {

@@ -50,8 +50,10 @@
 			var target = $(this.hash);
 			target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
 			if (target.length) {
+				// a navbar encolhe ao rolar, entao o offset precisa ser medido no momento do clique
+				var offset = nav.hasClass('navbar-reduce') ? nav.outerHeight() : 70;
 				$('html, body').animate({
-					scrollTop: (target.offset().top - navHeight + 5)
+					scrollTop: (target.offset().top - offset + 5)
 				}, 1000, "easeInOutExpo");
 				return false;
 			}
