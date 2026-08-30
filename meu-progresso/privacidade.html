@@ -6,7 +6,7 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Política de Privacidade - Meu Progresso</title>
   <meta name="description"
-    content="Política de Privacidade do aplicativo Meu Progresso: quais dados coletamos, como usamos e quais são os seus direitos segundo a LGPD.">
+    content="Política de Privacidade do aplicativo Meu Progresso: o que fica no seu aparelho, o que vai para a nuvem, como excluir tudo e quais são os seus direitos segundo a LGPD.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://www.wolfdeveloper.com.br/meu-progresso/privacidade.html">
   <meta name="theme-color" content="#0a0a0a">
@@ -32,146 +32,247 @@
 
   <main class="mp-container mp-legal">
     <h1>Política de Privacidade</h1>
-    <p class="mp-updated">Última atualização: 23 de agosto de 2026</p>
+    <p class="mp-updated">Última atualização: 24 de agosto de 2026</p>
 
     <p>
-      Esta Política de Privacidade descreve como o aplicativo <strong>Meu Progresso</strong>, desenvolvido e mantido
-      pela <strong>WolfDeveloper</strong>, coleta, utiliza, armazena e protege as informações dos seus usuários. Ao
-      utilizar o aplicativo, você concorda com as práticas descritas neste documento.
+      O <strong>Meu Progresso</strong> é um aplicativo de registro de treinos de musculação. Ele funciona
+      <strong>offline</strong> e <strong>sem conta</strong>: por padrão, tudo o que você registra fica guardado apenas
+      no seu aparelho. Esta política explica, sem rodeios, o que acontece com seus dados quando você decide criar uma
+      conta, ativar o backup na nuvem ou assinar o Premium.
     </p>
 
     <div class="mp-note">
       <p>
-        <strong>Resumo:</strong> o Meu Progresso não exibe anúncios e não vende os seus dados. Na versão gratuita,
-        os seus treinos ficam armazenados apenas no seu aparelho. A sincronização e o backup na nuvem existem
-        somente na versão paga.
+        <strong>Controlador dos dados:</strong> Kayque Andrade &mdash; desenvolvedor independente (pessoa física), que
+        publica seus aplicativos sob a marca WolfDeveloper.
+      </p>
+      <p>
+        <strong>Contato para assuntos de privacidade:</strong>
+        <a href="mailto:wolfdevelloper@gmail.com">wolfdevelloper@gmail.com</a> &middot;
+        <a href="https://api.whatsapp.com/send?phone=5511984703336" target="_blank"
+          rel="noopener noreferrer">(11) 98470-3336</a>.
       </p>
     </div>
 
-    <h2>1. Quem é o controlador dos dados</h2>
-    <p>
-      O controlador dos dados pessoais tratados pelo aplicativo é a <strong>WolfDeveloper</strong>, que pode ser
-      contatada pelo e-mail <a href="mailto:wolfdevelloper@gmail.com">wolfdevelloper@gmail.com</a> ou pelo telefone
-      <a href="https://api.whatsapp.com/send?phone=5511984703336" target="_blank"
-        rel="noopener noreferrer">(11) 98470-3336</a>.
-    </p>
-
-    <h2>2. Dados que coletamos</h2>
+    <h2>1. Dados que ficam apenas no seu aparelho</h2>
+    <p>Ao usar o app sem conta, <strong>nada sai do seu celular</strong>. Ficam guardados localmente:</p>
     <ul>
-      <li>
-        <strong>Dados de cadastro:</strong> endereço de e-mail e senha, coletados apenas quando você opta por criar
-        uma conta. A senha é armazenada de forma criptografada pelo nosso provedor de autenticação e não fica
-        acessível à WolfDeveloper.
-      </li>
-      <li>
-        <strong>Dados de treino:</strong> exercícios, categorias, séries, repetições, cargas, tempos de descanso,
-        anotações e datas dos treinos que você registra no aplicativo.
-      </li>
-      <li>
-        <strong>Preferências do aplicativo:</strong> tema claro ou escuro, dia de início da semana e demais ajustes
-        de configuração.
-      </li>
-      <li>
-        <strong>Dados de uso e diagnóstico:</strong> eventos de navegação e de uso de funcionalidades coletados pelo
-        Firebase Analytics, além de identificadores técnicos do dispositivo, sistema operacional e versão do
-        aplicativo.
-      </li>
+      <li><strong>Categorias</strong> (grupos musculares) &mdash; nome e cor.</li>
+      <li><strong>Exercícios</strong> &mdash; nome, categoria, carga padrão em quilos, séries e repetições padrão, se o
+        peso é anotado por lado, se a execução é unilateral e as suas anotações livres.</li>
+      <li><strong>Treinos</strong> &mdash; o exercício executado, o dia, as séries (peso levantado, repetições, tempo de
+        descanso e de execução, se foi série de trabalho ou aquecimento) e as observações que você escrever.</li>
+      <li><strong>Fichas e grupos de treino</strong> &mdash; nome do grupo e quais exercícios o compõem.</li>
+      <li><strong>Preferências</strong> &mdash; tema claro ou escuro, dia em que a semana começa, regra para treino
+        feito depois da meia-noite, preenchimento automático com o último treino, blocos recolhidos, último dia
+        selecionado e contadores internos (por exemplo, para decidir quando convidar você a avaliar o app).</li>
     </ul>
     <p>
-      O Meu Progresso <strong>não coleta</strong> dados sensíveis de saúde, localização precisa, contatos, fotos ou
-      informações de pagamento. As cobranças da versão paga são processadas integralmente pela Google Play e pela
-      App Store, que não nos repassam os dados do seu cartão.
+      <strong>O &ldquo;peso&rdquo; do app é sempre a carga do exercício, em quilos.</strong> O Meu Progresso não
+      pergunta nem armazena peso corporal, altura, IMC, medidas, idade, sexo, frequência cardíaca ou qualquer outro
+      dado de saúde.
     </p>
 
-    <h2>3. Como usamos os dados</h2>
+    <h2>2. Conta (opcional)</h2>
+    <p>
+      Criar conta serve para vincular seus treinos a você e habilitar o backup na nuvem. A autenticação é feita pelo
+      <strong>Firebase Authentication</strong> (Google LLC). Conforme a forma de entrada escolhida, recebemos:
+    </p>
+    <div class="mp-table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Forma de entrada</th>
+            <th>Dados recebidos</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>E-mail e senha</td>
+            <td>Endereço de e-mail. <strong>A senha é enviada diretamente ao Firebase; o app não a armazena nem tem
+                acesso a ela.</strong> Enviamos um e-mail de verificação e o acesso por senha só é liberado após a
+              confirmação.</td>
+          </tr>
+          <tr>
+            <td>Google</td>
+            <td>E-mail, nome de exibição e endereço (URL) da sua foto de perfil.</td>
+          </tr>
+          <tr>
+            <td>Apple</td>
+            <td>E-mail e nome, conforme o que você autorizar. Se você escolher &ldquo;Ocultar meu e-mail&rdquo;,
+              recebemos o endereço de redirecionamento gerado pela Apple &mdash; e é ele que fica registrado.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>
+      Esses dados são usados para identificar sua sessão, exibir sua conta na tela de Configurações e vincular
+      corretamente os seus treinos. Guardamos localmente e no nosso banco: identificador da conta, e-mail, nome,
+      endereço da foto e a plataforma do último acesso (iOS ou Android).
+    </p>
+
+    <h2>3. Backup na nuvem</h2>
+    <p>
+      Com a conta ativa, o conteúdo dos seus treinos pode ser copiado para o nosso banco de dados, hospedado no
+      <strong>Supabase</strong>. É uma <strong>cópia de segurança</strong>: o seu aparelho continua sendo a fonte
+      principal, e o app funciona normalmente sem internet.
+    </p>
     <ul>
-      <li>Permitir o registro dos treinos e o cálculo da sua progressão de carga.</li>
-      <li>Autenticar o seu acesso e manter a sua sessão ativa, quando você possui conta.</li>
-      <li>Sincronizar e manter backup dos seus dados entre dispositivos, exclusivamente na versão paga.</li>
-      <li>Entender de forma agregada quais funcionalidades são mais usadas, para priorizar melhorias.</li>
-      <li>Identificar e corrigir falhas, erros e problemas de desempenho.</li>
-      <li>Responder às suas solicitações de suporte.</li>
+      <li><strong>O que é copiado:</strong> categorias, exercícios, treinos e suas séries, fichas e grupos de treino e
+        as quatro preferências de uso (tema, dia inicial da semana, regra da madrugada e preenchimento
+        automático).</li>
+      <li><strong>O que não é copiado:</strong> o estado de assinatura em cache, contadores internos, blocos recolhidos
+        e outras marcas técnicas do aparelho.</li>
+      <li><strong>Quando acontece:</strong> ao abrir o app, ao voltar para ele, ao entrar na conta, quando você toca em
+        &ldquo;Enviar agora&rdquo; na tela de Backup e, no Android, em uma verificação periódica em segundo plano.</li>
+      <li><strong>Enviar é gratuito.</strong> <strong>Baixar</strong> a cópia para um aparelho é um recurso da
+        assinatura Premium.</li>
+      <li><strong>Isolamento:</strong> cada linha guardada carrega o identificador da sua conta, e o banco aplica regras
+        de segurança (Row Level Security) que <strong>impedem qualquer outra conta de ler ou alterar seus dados</strong>
+        &mdash; a verificação é feita no servidor, a partir do seu token de acesso.</li>
+    </ul>
+
+    <h2>4. Diagnóstico e uso do app</h2>
+    <p>
+      Usamos <strong>Firebase Analytics</strong> e <strong>Firebase Crashlytics</strong> (Google LLC) para entender como
+      o app é usado e corrigir falhas. São enviados:
+    </p>
+    <ul>
+      <li><strong>Eventos de uso:</strong> telas abertas, botões tocados, entradas e saídas da conta, abertura da tela
+        de planos e eventos de compra (início, conclusão, restauração), sempre com data e hora.</li>
+      <li><strong>Relatórios de falha:</strong> travamentos e erros, com a informação técnica necessária para
+        diagnosticá-los (tipo do erro e rastreamento de pilha).</li>
+      <li><strong>Identificador de conta:</strong> quando você está logado, os eventos são associados ao identificador
+        da sua conta (não ao seu e-mail). Ao sair da conta ou excluí-la, essa associação é encerrada.</li>
+      <li><strong>Identificador de publicidade (Android):</strong> o Firebase Analytics pode coletar o identificador de
+        publicidade do dispositivo (AAID) em seu funcionamento padrão. <strong>Não exibimos anúncios e não usamos esse
+          identificador para publicidade nem o compartilhamos com anunciantes.</strong></li>
     </ul>
     <p>
-      Não utilizamos os seus dados para publicidade comportamental, não exibimos anúncios no aplicativo e não
-      vendemos, alugamos ou comercializamos as suas informações.
+      <strong>O conteúdo dos seus treinos nunca é enviado para essas ferramentas</strong> &mdash; nomes de exercícios,
+      cargas, observações e datas dos treinos ficam fora do diagnóstico.
+    </p>
+    <p>
+      Hoje o app <strong>não oferece um botão para desativar</strong> esse envio. Se você não quiser que ele ocorra, a
+      alternativa é não instalar ou desinstalar o aplicativo. Estamos avaliando incluir esse controle em uma versão
+      futura.
     </p>
 
-    <h2>4. Base legal do tratamento</h2>
+    <h2>5. Assinatura Premium</h2>
     <p>
-      Nos termos da Lei Geral de Proteção de Dados (Lei nº 13.709/2018), tratamos os seus dados com base na
-      <strong>execução do contrato</strong> firmado com você ao usar o aplicativo (dados de conta, treinos e
-      sincronização), no <strong>legítimo interesse</strong> de melhorar e manter o serviço (dados de uso e
-      diagnóstico) e no <strong>cumprimento de obrigação legal</strong>, quando aplicável.
+      A assinatura é processada <strong>inteiramente pelas lojas</strong> &mdash; Google Play ou App Store. <strong>O app
+        não vê, não recebe e não armazena dados de pagamento</strong>: nada de cartão, CPF, endereço ou recibo.
+      Recebemos da loja apenas o identificador do plano e a situação da transação (concluída, restaurada, pendente,
+      cancelada ou com erro), e guardamos localmente uma marca de &ldquo;é assinante&rdquo;, para o app funcionar mesmo
+      sem internet.
     </p>
 
-    <h2>5. Armazenamento e compartilhamento</h2>
+    <h2>6. Com quem os dados são compartilhados</h2>
     <p>
-      Na versão gratuita, os dados de treino ficam armazenados <strong>localmente no seu dispositivo</strong>. Na
-      versão paga, esses dados também são enviados aos nossos servidores para permitir sincronização e backup, sempre
-      trafegando por conexão criptografada e isolados por conta de usuário.
+      <strong>Não vendemos seus dados e não os compartilhamos para publicidade.</strong> Atuam como operadores, apenas
+      para o app funcionar:
     </p>
-    <p>Compartilhamos dados apenas com os seguintes operadores, na medida necessária ao funcionamento do serviço:</p>
     <ul>
-      <li><strong>Google Firebase</strong> (Analytics e infraestrutura) &mdash; métricas de uso e diagnóstico.</li>
-      <li><strong>Provedor de autenticação e banco de dados</strong> &mdash; conta de acesso e dados sincronizados na
-        versão paga.</li>
-      <li><strong>Google Play e Apple App Store</strong> &mdash; validação da assinatura ativa.</li>
+      <li><strong>Google LLC</strong> &mdash; Firebase Authentication (conta), Analytics e Crashlytics (diagnóstico),
+        Google Play (assinatura e login com Google).</li>
+      <li><strong>Supabase Inc.</strong> &mdash; banco de dados do backup na nuvem.</li>
+      <li><strong>Apple Inc.</strong> &mdash; App Store (assinatura) e Sign in with Apple (login).</li>
     </ul>
     <p>
-      Alguns desses fornecedores podem processar dados fora do Brasil. Nesses casos, a transferência internacional
-      ocorre sob as salvaguardas contratuais oferecidas por eles. Também podemos divulgar informações quando houver
-      determinação legal, judicial ou de autoridade competente.
+      Alguns desses fornecedores processam dados fora do Brasil; nesses casos, a transferência internacional ocorre sob
+      as salvaguardas contratuais oferecidas por eles. Podemos ainda divulgar informações se formos legalmente
+      obrigados por autoridade competente.
     </p>
 
-    <h2>6. Retenção e exclusão</h2>
+    <h2>7. Cópias feitas pelo seu próprio celular</h2>
     <p>
-      Mantemos os seus dados enquanto a sua conta estiver ativa. O aplicativo oferece a opção de apagar todos os
-      dados a qualquer momento nas configurações. Ao solicitar a exclusão da conta, os dados associados são
-      eliminados dos nossos servidores em até 30 dias, ressalvadas as informações que precisemos reter por obrigação
-      legal. Desinstalar o aplicativo remove os dados armazenados localmente no aparelho.
-    </p>
-
-    <h2>7. Seus direitos</h2>
-    <p>Você pode, a qualquer momento, solicitar:</p>
-    <ul>
-      <li>Confirmação da existência de tratamento e acesso aos seus dados.</li>
-      <li>Correção de dados incompletos, inexatos ou desatualizados.</li>
-      <li>Anonimização, bloqueio ou eliminação de dados desnecessários ou excessivos.</li>
-      <li>Portabilidade dos dados a outro fornecedor.</li>
-      <li>Informação sobre com quem compartilhamos os seus dados.</li>
-      <li>Revogação do consentimento e exclusão da conta.</li>
-    </ul>
-    <p>
-      Para exercer qualquer um desses direitos, escreva para
-      <a href="mailto:wolfdevelloper@gmail.com">wolfdevelloper@gmail.com</a>. Respondemos em até 15 dias.
+      Android e iOS podem incluir os dados dos aplicativos instalados nos backups do sistema (Google Drive ou iCloud),
+      conforme as configurações do seu aparelho. Esses backups são feitos <strong>pela plataforma, na sua conta
+        pessoal</strong> &mdash; não temos acesso a eles. Você pode desativá-los nas configurações do sistema
+      operacional.
     </p>
 
     <h2>8. Segurança</h2>
     <p>
-      Adotamos medidas técnicas e administrativas para proteger os seus dados, incluindo criptografia em trânsito,
-      autenticação por conta e isolamento de dados entre usuários. Ainda assim, nenhum sistema é totalmente imune a
-      falhas: caso identifiquemos um incidente de segurança relevante, comunicaremos os usuários afetados e a
-      Autoridade Nacional de Proteção de Dados conforme exigido pela LGPD.
+      A comunicação com a nuvem é criptografada (HTTPS). O acesso ao banco exige um token de autenticação válido e é
+      limitado pelas regras de segurança descritas no item 3. Nenhum sistema é infalível: recomendamos manter o
+      aparelho atualizado e protegido por senha ou biometria. Caso identifiquemos um incidente de segurança relevante,
+      comunicaremos os usuários afetados e a Autoridade Nacional de Proteção de Dados, conforme exige a LGPD.
     </p>
 
-    <h2>9. Menores de idade</h2>
+    <h2>9. Seus direitos (LGPD)</h2>
     <p>
-      O Meu Progresso não é direcionado a menores de 13 anos e não coletamos intencionalmente dados desse público.
-      Usuários entre 13 e 18 anos devem utilizar o aplicativo com supervisão dos pais ou responsáveis. Se
-      identificarmos uma conta criada por menor de 13 anos, ela será removida.
+      A Lei nº 13.709/2018 garante a você, entre outros, o direito de confirmar o tratamento, acessar, corrigir,
+      portar, eliminar dados e revogar consentimento. Na prática, dentro do app:
+    </p>
+    <ul>
+      <li><strong>Acessar e corrigir:</strong> todo o conteúdo está visível e editável nas telas do app; os dados da
+        conta ficam em Configurações.</li>
+      <li><strong>Eliminar dados específicos:</strong> exclua treinos, exercícios, categorias ou grupos diretamente nas
+        telas correspondentes.</li>
+      <li><strong>Eliminar tudo:</strong> use <strong>Configurações &rarr; Excluir minha conta</strong> (veja o item
+        10).</li>
+      <li><strong>Demais solicitações:</strong> escreva para
+        <a href="mailto:wolfdevelloper@gmail.com">wolfdevelloper@gmail.com</a>; respondemos no prazo legal.</li>
+    </ul>
+    <p>
+      <strong>Bases legais:</strong> execução do contrato (fornecer o app, a conta e a assinatura que você contratou),
+      legítimo interesse (segurança, diagnóstico e melhoria do produto) e cumprimento de obrigação legal, quando
+      aplicável.
     </p>
 
-    <h2>10. Alterações nesta política</h2>
+    <h2>10. Exclusão de dados</h2>
     <p>
-      Esta política pode ser atualizada para refletir mudanças no aplicativo ou na legislação. A data da última
-      revisão sempre constará no topo desta página e, em caso de alteração relevante, avisaremos dentro do
-      aplicativo.
+      A opção <strong>Configurações &rarr; Excluir minha conta</strong> (disponível quando você está logado, com duas
+      confirmações) apaga, nesta ordem:
+    </p>
+    <ul>
+      <li>todo o seu conteúdo e suas preferências <strong>no nosso banco na nuvem</strong>, em exclusão definitiva
+        &mdash; não é marcação de &ldquo;apagado&rdquo;, é remoção da linha;</li>
+      <li>a sua <strong>credencial de acesso</strong> no Firebase Authentication;</li>
+      <li>todos os <strong>dados no aparelho</strong>, incluindo treinos, catálogo e a marca de assinante.</li>
+    </ul>
+    <p>
+      Se a exclusão da credencial exigir um login recente, o app avisa e mantém os seus dados intactos até você entrar
+      de novo e repetir a operação &mdash; nada é perdido pela metade.
+    </p>
+    <div class="mp-note">
+      <p>
+        <strong>Duas observações honestas.</strong> Os relatórios de diagnóstico e os eventos de uso já enviados ao
+        Firebase seguem os prazos de retenção da própria Google e não são apagados por esse fluxo; se quiser solicitar a
+        remoção deles, escreva para o nosso contato.
+      </p>
+      <p>
+        Além disso, <strong>desinstalar o app não apaga a cópia na nuvem nem a sua conta</strong> &mdash; apenas os
+        dados do aparelho. Para apagar tudo, use &ldquo;Excluir minha conta&rdquo; <em>antes</em> de desinstalar.
+      </p>
+    </div>
+
+    <h2>11. Por quanto tempo guardamos</h2>
+    <p>
+      Enquanto você mantiver o app instalado ou a conta ativa. Treinos que você exclui vão para a
+      <strong>lixeira</strong> e ficam recuperáveis por 1 ano em <em>Ver dados apagados</em>; passado esse período,
+      deixam de ser exibidos, mas <strong>só são apagados definitivamente quando você exclui a conta ou desinstala o
+        app</strong>. Não mantemos backups próprios além da cópia descrita no item 3.
     </p>
 
-    <h2>11. Contato</h2>
+    <h2>12. Crianças e adolescentes</h2>
     <p>
-      Dúvidas sobre privacidade ou sobre este documento:
+      O app é destinado a pessoas com <strong>13 anos ou mais</strong>. Menores de 18 anos devem usá-lo com o
+      consentimento e sob a supervisão dos pais ou responsáveis, que também respondem por eventual contratação da
+      assinatura. Não coletamos intencionalmente dados de menores de 13 anos; se identificarmos um cadastro nessa
+      condição, a conta será excluída.
+    </p>
+
+    <h2>13. Alterações nesta política</h2>
+    <p>
+      Podemos atualizar este documento para refletir mudanças no app ou na legislação. A data no topo indica a última
+      revisão; alterações relevantes serão comunicadas dentro do aplicativo ou nas lojas.
+    </p>
+
+    <h2>14. Contato</h2>
+    <p>
+      Dúvidas, solicitações de titular ou pedidos de exclusão:
       <a href="mailto:wolfdevelloper@gmail.com">wolfdevelloper@gmail.com</a> &middot;
       <a href="https://api.whatsapp.com/send?phone=5511984703336" target="_blank"
         rel="noopener noreferrer">(11) 98470-3336</a>.

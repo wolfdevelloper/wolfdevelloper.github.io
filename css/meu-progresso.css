@@ -31,6 +31,7 @@ body {
 
 img {
   max-width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -263,15 +264,20 @@ a:hover {
 /*  Gallery  */
 .mp-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1.5rem;
 }
 
 .mp-shot {
+  margin: 0;
   border: 1px solid var(--mp-border);
   border-radius: 18px;
   overflow: hidden;
   background-color: var(--mp-surface);
+}
+
+.mp-shot img {
+  width: 100%;
 }
 
 .mp-shot figcaption {
@@ -305,7 +311,7 @@ a:hover {
 
 /*  Legal pages  */
 .mp-legal {
-  padding: 3.5rem 0 4.5rem;
+  padding: 3.5rem 1.25rem 4.5rem;
   max-width: 820px;
 }
 
@@ -339,6 +345,33 @@ a:hover {
   margin-bottom: .5rem;
 }
 
+.mp-table-wrap {
+  overflow-x: auto;
+  margin: 1.25rem 0;
+}
+
+.mp-legal table {
+  width: 100%;
+  min-width: 32rem;
+  border-collapse: collapse;
+  font-size: .95rem;
+}
+
+.mp-legal th,
+.mp-legal td {
+  border: 1px solid var(--mp-border);
+  padding: .7rem .9rem;
+  text-align: left;
+  vertical-align: top;
+  color: #dcdcdc;
+}
+
+.mp-legal th {
+  background-color: var(--mp-surface-2);
+  color: var(--mp-text);
+  font-weight: 600;
+}
+
 .mp-note {
   background-color: var(--mp-surface-2);
   border-left: 3px solid var(--mp-red);
@@ -349,6 +382,10 @@ a:hover {
 
 .mp-note p {
   margin: 0;
+}
+
+.mp-note p + p {
+  margin-top: .75rem;
 }
 
 /*  Footer  */
