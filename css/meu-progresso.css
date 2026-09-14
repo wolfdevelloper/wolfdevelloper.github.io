@@ -1,6 +1,10 @@
 :root {
-  --mp-red: #e53935;
+  --mp-red: #d32f2f;
   --mp-red-soft: #ff6b6b;
+  --mp-gold: #ffd700;
+  --mp-gold-soft: #ffe066;
+  --mp-green: #16ae7c;
+  --mp-graphite: #2f3437;
   --mp-bg: #0a0a0a;
   --mp-surface: #151515;
   --mp-surface-2: #1e1e1e;
@@ -432,4 +436,530 @@ a:hover {
     padding-top: .75rem;
     padding-bottom: .75rem;
   }
+}
+
+/* =========================================================================
+   Redesign 2026-09 — seções novas da landing (mantém a marca: escuro + vermelho)
+   O dourado é o `premium: #FFD700` do próprio app; o grafite é o #2F3437 da
+   splash nativa. Regras aqui embaixo sobrepõem as de cima onde preciso.
+   ========================================================================= */
+
+/*  Hero: três celulares sobrepostos  */
+.mp-hero {
+  padding: 4.5rem 0 4rem;
+}
+
+.mp-hero-grid {
+  grid-template-columns: 1.05fr .95fr;
+  gap: 2rem;
+}
+
+.mp-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .35rem .85rem;
+  border-radius: 999px;
+  border: 1px solid rgba(211, 47, 47, .4);
+  background-color: rgba(211, 47, 47, .12);
+  color: var(--mp-red-soft);
+  font-size: .8rem;
+  font-weight: 600;
+  letter-spacing: .4px;
+  margin-bottom: 1.25rem;
+}
+
+.mp-phones {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 520px;
+}
+
+.mp-phones img {
+  border-radius: 22px;
+  border: 1px solid var(--mp-border);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, .65);
+  width: 230px;
+}
+
+.mp-phones .mp-phone-main {
+  position: relative;
+  z-index: 3;
+  width: 262px;
+  box-shadow: 0 28px 70px rgba(0, 0, 0, .75), 0 0 0 1px rgba(211, 47, 47, .25);
+}
+
+.mp-phones .mp-phone-side {
+  position: absolute;
+  z-index: 1;
+  opacity: .85;
+}
+
+.mp-phones .mp-phone-left {
+  left: 0;
+  transform: rotate(-7deg) translateY(18px) scale(.86);
+}
+
+.mp-phones .mp-phone-right {
+  right: 0;
+  transform: rotate(7deg) translateY(18px) scale(.86);
+}
+
+/*  Faixa de prova: grátis de verdade  */
+.mp-proof {
+  border-top: 1px solid var(--mp-border);
+  border-bottom: 1px solid var(--mp-border);
+  background-color: rgba(22, 174, 124, .05);
+  padding: 1.75rem 0;
+}
+
+.mp-proof-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.25rem;
+}
+
+.mp-proof-item {
+  display: flex;
+  align-items: flex-start;
+  gap: .75rem;
+}
+
+.mp-proof-item i {
+  color: var(--mp-green);
+  font-size: 1.15rem;
+  line-height: 1.6;
+}
+
+.mp-proof-item strong {
+  display: block;
+  font-size: .98rem;
+}
+
+.mp-proof-item span {
+  color: var(--mp-muted);
+  font-size: .86rem;
+  line-height: 1.5;
+}
+
+/*  Selos grátis / premium  */
+.mp-tag {
+  display: inline-block;
+  padding: .18rem .6rem;
+  border-radius: 999px;
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.mp-tag--free {
+  color: var(--mp-green);
+  background-color: rgba(22, 174, 124, .14);
+  border: 1px solid rgba(22, 174, 124, .4);
+}
+
+.mp-tag--premium {
+  color: var(--mp-gold-soft);
+  background-color: rgba(255, 215, 0, .12);
+  border: 1px solid rgba(255, 215, 0, .38);
+}
+
+.mp-section-tag {
+  margin-bottom: .9rem;
+}
+
+/*  Novidades  */
+.mp-news {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1rem;
+}
+
+.mp-news-item {
+  display: flex;
+  gap: .9rem;
+  padding: 1.15rem 1.25rem;
+  border: 1px solid var(--mp-border);
+  border-left: 3px solid var(--mp-border);
+  border-radius: 12px;
+  background-color: var(--mp-surface);
+}
+
+.mp-news-item--free {
+  border-left-color: var(--mp-green);
+}
+
+.mp-news-item--premium {
+  border-left-color: var(--mp-gold);
+}
+
+.mp-news-item h3 {
+  font-size: 1rem;
+  margin: 0 0 .3rem;
+}
+
+.mp-news-item p {
+  color: var(--mp-muted);
+  font-size: .9rem;
+  margin: 0;
+}
+
+/*  Premium  */
+.mp-premium {
+  border-top: 1px solid rgba(255, 215, 0, .25);
+  background:
+    radial-gradient(900px 400px at 20% 0%, rgba(255, 215, 0, .10), transparent 62%),
+    radial-gradient(700px 340px at 90% 12%, rgba(255, 215, 0, .05), transparent 60%);
+}
+
+.mp-premium h2 {
+  color: var(--mp-text);
+}
+
+.mp-premium-lead {
+  max-width: 46rem;
+  color: #dcdcdc;
+  margin: 0 0 1rem;
+}
+
+.mp-premium-lead strong {
+  color: var(--mp-gold-soft);
+}
+
+.mp-headline {
+  font-size: clamp(1.35rem, 3vw, 1.9rem);
+  font-weight: 800;
+  line-height: 1.25;
+  margin: 2.25rem 0 1.75rem;
+  color: var(--mp-gold-soft);
+}
+
+.mp-benefits {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.mp-benefit {
+  display: flex;
+  gap: 1rem;
+  padding: 1.35rem 1.4rem;
+  border: 1px solid rgba(255, 215, 0, .22);
+  border-radius: 14px;
+  background-color: rgba(255, 215, 0, .035);
+  transition: border-color .25s ease, transform .25s ease;
+}
+
+.mp-benefit:hover {
+  border-color: rgba(255, 215, 0, .55);
+  transform: translateY(-3px);
+}
+
+.mp-benefit-num {
+  flex: 0 0 auto;
+  width: 30px;
+  height: 30px;
+  border-radius: 9px;
+  display: grid;
+  place-items: center;
+  background-color: rgba(255, 215, 0, .14);
+  color: var(--mp-gold-soft);
+  font-weight: 800;
+  font-size: .9rem;
+}
+
+.mp-benefit h3 {
+  font-size: 1.02rem;
+  margin: .15rem 0 .35rem;
+}
+
+.mp-benefit p {
+  color: var(--mp-muted);
+  font-size: .9rem;
+  margin: 0;
+}
+
+.mp-benefit p + p {
+  margin-top: .4rem;
+  font-size: .84rem;
+  color: #8f8f8f;
+}
+
+/*  Vitrine visual das telas pagas  */
+.mp-premium-shots {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.mp-premium-shots .mp-shot {
+  border-color: rgba(255, 215, 0, .22);
+}
+
+.mp-premium-shots .mp-shot figcaption {
+  border-top-color: rgba(255, 215, 0, .18);
+}
+
+/*  Preço  */
+.mp-price {
+  border: 1px solid rgba(255, 215, 0, .3);
+  border-radius: 16px;
+  background-color: rgba(255, 215, 0, .05);
+  padding: 1.75rem;
+}
+
+.mp-price-main {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin: 0 0 .4rem;
+}
+
+.mp-price-main span {
+  color: var(--mp-gold-soft);
+}
+
+.mp-price p {
+  color: var(--mp-muted);
+  font-size: .92rem;
+  margin: 0 0 .4rem;
+}
+
+.mp-price .mp-fineprint {
+  font-size: .82rem;
+  color: #8f8f8f;
+  margin-top: 1rem;
+}
+
+/*  FAQ  */
+.mp-faq {
+  display: grid;
+  gap: .75rem;
+  max-width: 52rem;
+}
+
+.mp-faq details {
+  border: 1px solid var(--mp-border);
+  border-radius: 12px;
+  background-color: var(--mp-surface);
+  padding: 0 1.25rem;
+}
+
+.mp-faq summary {
+  cursor: pointer;
+  padding: 1.05rem 0;
+  font-weight: 600;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.mp-faq summary::-webkit-details-marker {
+  display: none;
+}
+
+.mp-faq summary::after {
+  content: "+";
+  color: var(--mp-red-soft);
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.mp-faq details[open] summary::after {
+  content: "\2212";
+}
+
+.mp-faq details[open] summary {
+  border-bottom: 1px solid var(--mp-border);
+}
+
+.mp-faq p {
+  color: var(--mp-muted);
+  font-size: .93rem;
+  padding-bottom: .35rem;
+}
+
+/*  Ajustes de galeria e cards  */
+.mp-gallery {
+  grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
+}
+
+.mp-feature-ico i {
+  line-height: 1;
+}
+
+/*  Responsivo  */
+@media (max-width: 980px) {
+  .mp-phones {
+    min-height: 430px;
+  }
+
+  .mp-phones .mp-phone-main {
+    width: 224px;
+  }
+
+  .mp-phones img {
+    width: 190px;
+  }
+}
+
+@media (max-width: 860px) {
+  .mp-hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mp-eyebrow {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .mp-phones {
+    min-height: 0;
+    margin-top: 2.5rem;
+  }
+
+  .mp-phones .mp-phone-side {
+    display: none;
+  }
+
+  .mp-phones .mp-phone-main {
+    width: min(260px, 68vw);
+  }
+
+  .mp-benefit,
+  .mp-news-item,
+  .mp-proof-item {
+    text-align: left;
+  }
+}
+
+@media (max-width: 560px) {
+  .mp-header .mp-nav {
+    width: 100%;
+    justify-content: center;
+    gap: 1rem;
+    font-size: .88rem;
+  }
+
+  .mp-section {
+    padding: 3.25rem 0;
+  }
+
+  .mp-price {
+    padding: 1.35rem;
+  }
+}
+
+/*  Cartão do relógio: a imagem é quadrada-ish (416×496) num grid de telas
+    altas — centralizo no cartão em vez de esticar, e o cartão acompanha a
+    altura da fileira.  */
+.mp-shot--watch {
+  display: flex;
+  flex-direction: column;
+  background:
+    radial-gradient(120% 80% at 50% 30%, rgba(255, 215, 0, .07), transparent 70%),
+    var(--mp-surface);
+}
+
+.mp-shot--watch img {
+  width: auto;
+  max-width: 82%;
+  max-height: 300px;
+  margin: auto;
+  padding: 1.75rem 0;
+  border-radius: 18%;
+}
+
+.mp-shot--watch figcaption {
+  margin-top: auto;
+}
+
+/*  Novidades: o selo é a primeira linha do cartão  */
+.mp-news-item .mp-tag {
+  margin-bottom: .5rem;
+}
+
+/*  Vitrine paga: cinco imagens numa fileira só no desktop  */
+.mp-premium-shots {
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+/*  Hero: os celulares de trás encostam no principal, sem sair da caixa  */
+.mp-phones .mp-phone-left {
+  left: 4%;
+}
+
+.mp-phones .mp-phone-right {
+  right: 4%;
+}
+
+/*  A navegação do topo precisa quebrar: cinco itens não cabem em 390 px e,
+    sem `wrap`, é ela que estoura a largura da PÁGINA INTEIRA (e não só do
+    cabeçalho) — foi o que cortou o herói e a faixa de prova no celular.  */
+.mp-nav {
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+@media (max-width: 560px) {
+  .mp-header .mp-nav {
+    gap: .5rem 1rem;
+    font-size: .85rem;
+  }
+}
+
+/*  Vitrine paga: seis imagens em duas fileiras limpas de três, e a legenda
+    sempre no rodapé do cartão — os artefatos têm proporções diferentes
+    (tela de celular 1:2,2, cartão de rede social 4:5, relógio quase quadrado)
+    e sem isto cada legenda pousa numa altura.  */
+.mp-premium-shots {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.mp-shot {
+  display: flex;
+  flex-direction: column;
+}
+
+.mp-shot figcaption {
+  margin-top: auto;
+}
+
+.mp-premium-shots .mp-shot img {
+  align-self: center;
+  max-height: 620px;
+  width: auto;
+  max-width: 100%;
+}
+
+@media (max-width: 860px) {
+  .mp-premium-shots {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .mp-premium-shots {
+    grid-template-columns: 1fr;
+  }
+
+  .mp-premium-shots .mp-shot img {
+    max-height: 540px;
+  }
+}
+
+/*  As seis imagens da vitrine têm alturas diferentes (tela de celular, cartão
+    4:5, relógio, par de widgets). Com a legenda presa no rodapé, a sobra ia
+    toda para baixo da imagem; as duas margens automáticas a dividem e cada
+    imagem fica centrada no próprio cartão.  */
+.mp-premium-shots .mp-shot img {
+  margin-top: auto;
 }

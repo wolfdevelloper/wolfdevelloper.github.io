@@ -4,20 +4,29 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Meu Progresso - App de Academia para Acompanhar a Evolução de Carga</title>
+  <title>Meu Progresso - App de Academia para Registrar Treinos e Acompanhar a Evolução de Carga</title>
   <meta name="description"
-    content="Meu Progresso é o aplicativo de academia para registrar seus treinos e acompanhar a evolução de carga em cada exercício. Disponível para Android e iOS.">
+    content="Meu Progresso é o app de academia para registrar cada série e acompanhar a progressão de carga. Calendário, fichas de treino, cronômetros e gráficos de evolução — grátis, offline e sem anúncios. Android e iOS.">
   <meta name="keywords"
-    content="app de academia, registrar treino, progressão de carga, planilha de treino, aplicativo musculação, meu progresso">
+    content="app de academia, registrar treino, progressão de carga, ficha de treino, aplicativo musculação, meu progresso, treino no apple watch, wear os, widget de treino, treino na tela de bloqueio">
   <link rel="canonical" href="https://www.wolfdeveloper.com.br/meu-progresso/">
   <meta name="theme-color" content="#0a0a0a">
 
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="WolfDeveloper">
+  <meta property="og:locale" content="pt_BR">
   <meta property="og:title" content="Meu Progresso - App de Academia">
   <meta property="og:description"
-    content="Registre seus treinos e acompanhe a evolução de carga em cada exercício.">
+    content="Registre cada série e veja a carga subir semana a semana. Grátis, offline e sem anúncios.">
   <meta property="og:url" content="https://www.wolfdeveloper.com.br/meu-progresso/">
-  <meta property="og:image" content="https://www.wolfdeveloper.com.br/img/logo-meu-progresso.png">
+  <meta property="og:image" content="https://www.wolfdeveloper.com.br/img/meu-progresso/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Meu Progresso - App de Academia">
+  <meta name="twitter:description"
+    content="Registre cada série e veja a carga subir semana a semana. Grátis, offline e sem anúncios.">
+  <meta name="twitter:image" content="https://www.wolfdeveloper.com.br/img/meu-progresso/og-image.png">
 
   <link href="../img/logo-meu-progresso.png" rel="icon">
   <link href="../img/logo-meu-progresso.png" rel="apple-touch-icon">
@@ -36,6 +45,7 @@
       <nav class="mp-nav">
         <a href="#recursos">Recursos</a>
         <a href="#telas">Telas</a>
+        <a href="#novidades">Novidades</a>
         <a href="#premium">Premium</a>
         <a href="../index.html">WolfDeveloper</a>
       </nav>
@@ -44,14 +54,16 @@
 
   <main>
 
+    <!-- ============================ 1. HERO ============================ -->
     <section class="mp-hero">
       <div class="mp-container mp-hero-grid">
         <div>
-          <img class="mp-logo-lg" src="../img/logo-meu-progresso.png" alt="Ícone do aplicativo Meu Progresso">
-          <h1>Sua evolução na academia, <span>registrada série a série</span></h1>
+          <span class="mp-eyebrow"><i class="fa fa-check-circle" aria-hidden="true"></i> Grátis, offline e sem
+            anúncios</span>
+          <h1>Sua evolução na academia,<br><span>registrada série a série</span></h1>
           <p class="mp-lead">
-            O Meu Progresso guarda o histórico de carga, repetições e séries de cada exercício para você saber
-            exatamente quanto levantou da última vez — e quanto precisa levantar hoje.
+            O Meu Progresso guarda o peso, as repetições e o descanso de cada série. Você chega no aparelho já sabendo
+            quanto levantou da última vez — e o gráfico mostra a carga subindo semana a semana.
           </p>
           <div class="mp-stores">
             <a class="mp-store mp-store--primary"
@@ -64,135 +76,428 @@
             </a>
           </div>
         </div>
-        <div>
-          <img class="mp-phone" src="../img/meu-progresso/home.png" width="720" height="1440"
-            alt="Tela inicial do Meu Progresso com o calendário do mês e os treinos do dia">
+        <div class="mp-phones">
+          <img class="mp-phone-side mp-phone-left" src="../img/meu-progresso/treino.webp" width="680" height="1477"
+            alt="Tela de treino do Meu Progresso com as séries registradas e os cronômetros">
+          <img class="mp-phone-main" src="../img/meu-progresso/calendario.webp" width="680" height="1477"
+            alt="Calendário do Meu Progresso com os treinos do mês marcados por grupo muscular">
+          <img class="mp-phone-side mp-phone-right" src="../img/meu-progresso/analises.webp" width="680" height="1477"
+            alt="Gráfico de evolução de carga de um exercício no Meu Progresso">
         </div>
       </div>
     </section>
 
+    <!-- ======================= 2. PROVA DE GENEROSIDADE ======================= -->
+    <section class="mp-proof">
+      <div class="mp-container mp-proof-grid">
+        <div class="mp-proof-item">
+          <i class="fa fa-plane" aria-hidden="true"></i>
+          <div>
+            <strong>Funciona offline</strong>
+            <span>O treino inteiro acontece no aparelho. Academia com sinal ruim não é problema.</span>
+          </div>
+        </div>
+        <div class="mp-proof-item">
+          <i class="fa fa-ban" aria-hidden="true"></i>
+          <div>
+            <strong>Sem anúncios</strong>
+            <span>Nenhum banner, nenhum vídeo, em nenhuma das versões.</span>
+          </div>
+        </div>
+        <div class="mp-proof-item">
+          <i class="fa fa-user-o" aria-hidden="true"></i>
+          <div>
+            <strong>Sem conta obrigatória</strong>
+            <span>Baixou, abriu, treinou. Login só para guardar uma cópia na nuvem — e para assinar, se você
+              quiser o Premium.</span>
+          </div>
+        </div>
+        <div class="mp-proof-item">
+          <i class="fa fa-plus-circle" aria-hidden="true"></i>
+          <div>
+            <strong>Sem limite</strong>
+            <span>Quantos exercícios, fichas e treinos você quiser. Não existe cota nem versão limitada no
+              tempo.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================== 3. RECURSOS ========================== -->
     <section class="mp-section" id="recursos">
       <div class="mp-container">
+        <span class="mp-tag mp-tag--free mp-section-tag">Tudo isto é grátis</span>
         <h2>O que o app faz</h2>
         <p class="mp-section-sub">
-          Tudo o que você precisa para treinar sem depender de caderno, print ou planilha.
+          Tudo o que você precisa para treinar sem depender de caderno, print ou planilha — e sem pagar nada por isso.
         </p>
         <div class="mp-features">
 
           <div class="mp-feature">
-            <div class="mp-feature-ico"><i class="fa fa-line-chart" aria-hidden="true"></i></div>
-            <h3>Progressão de carga</h3>
-            <p>Veja o histórico completo de cada exercício e acompanhe em gráfico como a sua carga evoluiu ao longo
-              das semanas.</p>
+            <div class="mp-feature-ico"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+            <h3>Calendário de treinos</h3>
+            <p>Cada dia do mês mostra num anel colorido os músculos daquele dia — planejados ou já treinados. Um
+              olhar e você sabe como foi a semana, e quantos treinos já fechou no ano.</p>
           </div>
 
           <div class="mp-feature">
-            <div class="mp-feature-ico"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-            <h3>Calendário de treinos</h3>
-            <p>Organize os treinos por dia da semana e enxergue de relance o que já foi feito e o que ainda falta no
-              mês.</p>
+            <div class="mp-feature-ico"><i class="fa fa-list-ol" aria-hidden="true"></i></div>
+            <h3>Registro série a série</h3>
+            <p>Peso e repetições de cada série, com o último treino à vista em cada uma — e preenchimento
+              automático, se você quiser ligar. As séries de aquecimento ficam fora das suas métricas.</p>
+          </div>
+
+          <div class="mp-feature">
+            <div class="mp-feature-ico"><i class="fa fa-clock-o" aria-hidden="true"></i></div>
+            <h3>Três cronômetros</h3>
+            <p>O treino inteiro, o descanso entre séries e o tempo de execução de cada uma. Começou uma série e
+              saiu da tela? Ao voltar ao treino o cronômetro continua de onde estava.</p>
           </div>
 
           <div class="mp-feature">
             <div class="mp-feature-ico"><i class="fa fa-th-large" aria-hidden="true"></i></div>
             <h3>Fichas de treino</h3>
-            <p>Monte as suas fichas agrupando os exercícios de cada dia, na ordem que quiser, e comece o treino inteiro
-              com um toque.</p>
+            <p>Monte suas fichas A, B, C na ordem que quiser e lance o treino inteiro no dia com um toque. Cada ficha
+              decide até o próprio aquecimento.</p>
           </div>
 
           <div class="mp-feature">
             <div class="mp-feature-ico"><i class="fa fa-list-ul" aria-hidden="true"></i></div>
-            <h3>Biblioteca de exercícios</h3>
-            <p>Use a lista de exercícios que já vem pronta ou cadastre os seus, organizados por categorias e cores
-              personalizadas.</p>
+            <h3>Seus exercícios, do seu jeito</h3>
+            <p>Use o catálogo que já vem pronto ou cadastre os seus, com peso padrão, séries, repetições, peso por lado
+              e marcação de exercício unilateral.</p>
           </div>
 
           <div class="mp-feature">
-            <div class="mp-feature-ico"><i class="fa fa-clock-o" aria-hidden="true"></i></div>
-            <h3>Cronômetro de descanso</h3>
-            <p>O tempo de descanso começa sozinho quando você registra a série, então você não perde o ritmo do
-              treino.</p>
+            <div class="mp-feature-ico"><i class="fa fa-line-chart" aria-hidden="true"></i></div>
+            <h3>Progressão de carga</h3>
+            <p>Um gráfico por exercício com a carga ao longo do tempo, a tendência e a recomendação para o próximo
+              treino. A aba de análises é grátis e inteira.</p>
+          </div>
+
+          <div class="mp-feature">
+            <div class="mp-feature-ico"><i class="fa fa-bell-o" aria-hidden="true"></i></div>
+            <h3>Lembretes de treino</h3>
+            <p>O app avisa antes do seu horário — e, se você quiser, lembra também do pré-treino e da hora de comer. Sem
+              dia anotado, ele só pergunta se você vai treinar.</p>
+          </div>
+
+          <div class="mp-feature">
+            <div class="mp-feature-ico"><i class="fa fa-sort" aria-hidden="true"></i></div>
+            <h3>A ordem é sua</h3>
+            <p>Arraste os exercícios do dia para a ordem em que você vai executá-los. Imprevisto? Adie o
+              planejamento inteiro, copie um dia para outra data ou troque dois dias de lugar.</p>
           </div>
 
           <div class="mp-feature">
             <div class="mp-feature-ico"><i class="fa fa-moon-o" aria-hidden="true"></i></div>
             <h3>Modo claro e escuro</h3>
-            <p>Interface pensada para ser lida com uma mão só, no meio da série, com tema claro ou escuro à sua
-              escolha.</p>
+            <p>Interface pensada para ser lida com uma mão só, no meio da série, e que acompanha a fonte grande do
+              sistema para quem precisa.</p>
           </div>
 
         </div>
       </div>
     </section>
 
+    <!-- =========================== 4. TELAS =========================== -->
     <section class="mp-section" id="telas">
       <div class="mp-container mp-center">
+        <span class="mp-tag mp-tag--free mp-section-tag">Telas da versão gratuita</span>
         <h2>Telas do aplicativo</h2>
-        <p class="mp-section-sub">Um panorama rápido da experiência dentro do app.</p>
+        <p class="mp-section-sub">Tudo o que você vê aqui embaixo está na versão gratuita.</p>
         <div class="mp-gallery">
           <figure class="mp-shot">
-            <img src="../img/meu-progresso/home.png" width="720" height="1440" loading="lazy"
-              alt="Calendário do mês com os treinos marcados e a lista de treinos do dia">
-            <figcaption>Calendário de treinos</figcaption>
+            <img src="../img/meu-progresso/calendario.webp" width="680" height="1477" loading="lazy"
+              alt="Calendário do mês com os treinos marcados por grupo muscular e a lista do dia">
+            <figcaption>Calendário do mês</figcaption>
           </figure>
           <figure class="mp-shot">
-            <img src="../img/meu-progresso/treino.png" width="720" height="1440" loading="lazy"
-              alt="Tela de execução do treino com as séries registradas, carga e tempo de descanso">
+            <img src="../img/meu-progresso/treino.webp" width="680" height="1477" loading="lazy"
+              alt="Tela de treino com as séries registradas, a carga e o tempo de descanso">
             <figcaption>Treino em andamento</figcaption>
           </figure>
           <figure class="mp-shot">
-            <img src="../img/meu-progresso/fichas.png" width="720" height="1440" loading="lazy"
-              alt="Ficha de treino com os exercícios agrupados por categoria e reordenáveis">
+            <img src="../img/meu-progresso/fichas.webp" width="680" height="1477" loading="lazy"
+              alt="Fichas de treino com os exercícios agrupados e reordenáveis">
             <figcaption>Fichas de treino</figcaption>
           </figure>
           <figure class="mp-shot">
-            <img src="../img/meu-progresso/exercicios.png" width="720" height="1440" loading="lazy"
-              alt="Biblioteca de exercícios organizada por categorias com sugestão de carga">
-            <figcaption>Biblioteca de exercícios</figcaption>
+            <img src="../img/meu-progresso/exercicios.webp" width="680" height="1477" loading="lazy"
+              alt="Lista de exercícios organizada por grupo muscular">
+            <figcaption>Seus exercícios</figcaption>
           </figure>
           <figure class="mp-shot">
-            <img src="../img/meu-progresso/analises.png" width="720" height="1440" loading="lazy"
-              alt="Análises com o tempo de treino acumulado e a evolução de carga por exercício">
+            <img src="../img/meu-progresso/analises.webp" width="680" height="1477" loading="lazy"
+              alt="Gráfico de evolução de carga de um exercício ao longo das semanas">
             <figcaption>Progressão de carga</figcaption>
           </figure>
           <figure class="mp-shot">
-            <img src="../img/meu-progresso/configuracoes.png" width="720" height="1440" loading="lazy"
-              alt="Configurações do app com conta, assinatura, categorias e backup">
-            <figcaption>Configurações e backup</figcaption>
+            <img src="../img/meu-progresso/calendario-filtros.webp" width="680" height="1477" loading="lazy"
+              alt="Calendário filtrado pelos treinos concluídos do mês">
+            <figcaption>Filtros do mês</figcaption>
           </figure>
           <figure class="mp-shot">
-            <img src="../img/meu-progresso/calendario-escuro.png" width="720" height="1440" loading="lazy"
+            <img src="../img/meu-progresso/calendario-escuro.webp" width="680" height="1477" loading="lazy"
               alt="Calendário de treinos exibido no tema escuro">
-            <figcaption>Calendário no tema escuro</figcaption>
+            <figcaption>Tema escuro</figcaption>
           </figure>
           <figure class="mp-shot">
-            <img src="../img/meu-progresso/treino-escuro.png" width="720" height="1440" loading="lazy"
-              alt="Tela de treino exibida no tema escuro">
-            <figcaption>Treino no tema escuro</figcaption>
+            <img src="../img/meu-progresso/perfil.webp" width="680" height="1477" loading="lazy"
+              alt="Aba Perfil com conta, categorias e preferências de treino">
+            <figcaption>Perfil e preferências</figcaption>
           </figure>
         </div>
       </div>
     </section>
 
-    <section class="mp-section" id="premium">
+    <!-- ========================= 5. NOVIDADES ========================= -->
+    <section class="mp-section" id="novidades">
       <div class="mp-container">
-        <div class="mp-cta">
-          <h2>Meu Progresso Premium</h2>
-          <p class="mp-section-sub">
-            O app funciona offline e sem conta: por padrão, tudo o que você registra fica no seu aparelho. Com uma
-            conta o envio do backup é gratuito, e o Premium libera a restauração dos treinos em um aparelho e a
-            lixeira — sem anúncios, em nenhuma das versões.
+        <h2>O que entrou nas últimas versões</h2>
+        <p class="mp-section-sub">
+          O app não parou em pé desde o lançamento. Estas são as novidades mais recentes — e a maior parte é grátis.
+        </p>
+        <div class="mp-news">
+
+          <div class="mp-news-item mp-news-item--free">
+            <div>
+              <span class="mp-tag mp-tag--free">Grátis</span>
+              <h3>A série em execução não se perde</h3>
+              <p>Deu play numa série e foi olhar o calendário? O cronômetro continua. Nem fechar o app cancela a série
+                — ela volta de onde parou.</p>
+            </div>
+          </div>
+
+          <div class="mp-news-item mp-news-item--free">
+            <div>
+              <span class="mp-tag mp-tag--free">Grátis</span>
+              <h3>O app abre onde você parou</h3>
+              <p>Com um treino de hoje ou de ontem em andamento, abrir o app — pelo ícone ou pelo lembrete — leva
+                direto nele, na série em que você parou. Quem assina ganha as mesmas portas na tela bloqueada e nos
+                widgets.</p>
+            </div>
+          </div>
+
+          <div class="mp-news-item mp-news-item--free">
+            <div>
+              <span class="mp-tag mp-tag--free">Grátis</span>
+              <h3>Filtros e total do ano no calendário</h3>
+              <p>Toque em "concluídos" e o mês mostra só esses. E abaixo do nome do mês o app conta quantos treinos
+                você já fechou no ano.</p>
+            </div>
+          </div>
+
+          <div class="mp-news-item mp-news-item--premium">
+            <div>
+              <span class="mp-tag mp-tag--premium">Premium</span>
+              <h3>Treino na tela bloqueada</h3>
+              <p>Registre a série e ajuste a carga sem desbloquear o celular entre uma e outra.</p>
+            </div>
+          </div>
+
+          <div class="mp-news-item mp-news-item--premium">
+            <div>
+              <span class="mp-tag mp-tag--premium">Premium</span>
+              <h3>Treino no Apple Watch e no Wear OS</h3>
+              <p>O dia inteiro no pulso: play, pause, série e carga. O celular fica na mochila.</p>
+            </div>
+          </div>
+
+          <div class="mp-news-item mp-news-item--premium">
+            <div>
+              <span class="mp-tag mp-tag--premium">Premium</span>
+              <h3>Compartilhe o treino do dia</h3>
+              <p>Seus recordes e o rendimento do dia numa imagem pronta para postar.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================== 6. PREMIUM ========================== -->
+    <section class="mp-section mp-premium" id="premium">
+      <div class="mp-container">
+        <span class="mp-tag mp-tag--premium mp-section-tag">Opcional</span>
+        <h2>Vantagens para quem leva o treino a sério</h2>
+        <p class="mp-premium-lead">
+          <strong>Nada do que você leu até aqui é pago.</strong> O calendário, as fichas, os cronômetros, o gráfico de
+          evolução e os lembretes são gratuitos, sem anúncio e sem limite. O Premium é para quem quer o treino
+          <em>fora da tela do celular</em> — na tela bloqueada, no pulso, na tela inicial — e quer o histórico
+          analisado a fundo.
+        </p>
+
+        <p class="mp-headline">"Treine sem desbloquear o celular"</p>
+
+        <div class="mp-premium-shots">
+          <figure class="mp-shot">
+            <img src="../img/meu-progresso/tela-bloqueada.webp" width="680" height="760" loading="lazy"
+              alt="Notificação do treino com a carga, as repetições, o cronômetro e os botões de registrar">
+            <figcaption>Os controles sem desbloquear o celular</figcaption>
+          </figure>
+          <figure class="mp-shot mp-shot--watch">
+            <img src="../img/meu-progresso/relogio.webp" width="416" height="496" loading="lazy"
+              alt="O treino em andamento no Apple Watch: exercício, série, carga e o cronômetro correndo">
+            <figcaption>O treino no pulso</figcaption>
+          </figure>
+          <figure class="mp-shot">
+            <img src="../img/meu-progresso/compartilhar.webp" width="560" height="700" loading="lazy"
+              alt="Imagem do treino do dia com a grade de exercícios e os recordes">
+            <figcaption>A imagem do dia: os exercícios</figcaption>
+          </figure>
+          <figure class="mp-shot">
+            <img src="../img/meu-progresso/compartilhar-rosca.webp" width="560" height="700" loading="lazy"
+              alt="Imagem do treino do dia com a rosca do total levantado por músculo">
+            <figcaption>…e quanto cada músculo rendeu</figcaption>
+          </figure>
+          <figure class="mp-shot">
+            <img src="../img/meu-progresso/analises-avancadas.webp" width="680" height="1477" loading="lazy"
+              alt="Análises avançadas com o rendimento por músculo e a tendência de cada exercício">
+            <figcaption>Análises avançadas</figcaption>
+          </figure>
+          <figure class="mp-shot">
+            <img src="../img/meu-progresso/widgets.webp" width="680" height="439" loading="lazy"
+              alt="Os dois widgets do Meu Progresso: o treino de hoje e a evolução por músculo">
+            <figcaption>Os dois widgets: o dia e a evolução</figcaption>
+          </figure>
+        </div>
+
+        <div class="mp-benefits">
+
+          <div class="mp-benefit">
+            <div class="mp-benefit-num">1</div>
+            <div>
+              <h3>Treino na tela bloqueada</h3>
+              <p>Registre a série e ajuste a carga sem desbloquear o celular entre uma e outra.</p>
+              <p>Notificação no Android; Atividade ao Vivo e Ilha Dinâmica no iPhone, a partir do iOS 17.6.</p>
+            </div>
+          </div>
+
+          <div class="mp-benefit">
+            <div class="mp-benefit-num">2</div>
+            <div>
+              <h3>Treino no relógio</h3>
+              <p>Play, pause, série e carga no pulso — o celular fica na mochila.</p>
+              <p>Apple Watch e Wear OS, com o dia inteiro no relógio. Ele funciona longe do celular, e o que você
+                toca no pulso fica guardado e é reenviado quando os dois voltam a se falar.</p>
+            </div>
+          </div>
+
+          <div class="mp-benefit">
+            <div class="mp-benefit-num">3</div>
+            <div>
+              <h3>Compartilhe o treino do dia</h3>
+              <p>Seus recordes e o rendimento do dia numa imagem pronta para postar.</p>
+              <p>Ao fechar o dia, o app monta a grade com os exercícios e os recordes — e, quando o dia tem pelo
+                menos dois músculos com carga, também a rosca com quanto cada um rendeu.</p>
+            </div>
+          </div>
+
+          <div class="mp-benefit">
+            <div class="mp-benefit-num">4</div>
+            <div>
+              <h3>Widgets da tela inicial</h3>
+              <p>O treino de hoje e a sua evolução sem nem abrir o app.</p>
+              <p>Dois widgets — o calendário do mês e a evolução por músculo ou por exercício — e um toque abre o
+                app no dia certo, ou direto no treino, se você estiver no meio de um.</p>
+            </div>
+          </div>
+
+          <div class="mp-benefit">
+            <div class="mp-benefit-num">5</div>
+            <div>
+              <h3>Análises avançadas + PDF</h3>
+              <p>Descubra o que está evoluindo, série por série, e leve o relatório com você.</p>
+              <p>Recorte por período, músculo, exercício ou ficha, com tempo, volume e tendência — e um relatório em
+                PDF de verdade, com texto selecionável.</p>
+            </div>
+          </div>
+
+          <div class="mp-benefit">
+            <div class="mp-benefit-num">6</div>
+            <div>
+              <h3>Backup e restauração na nuvem</h3>
+              <p>Troque de celular sem perder um treino: seus dados voltam sozinhos.</p>
+              <p>O envio acontece sozinho, de graça, para quem tem conta. O Premium abre a tela de backup e é o que
+                traz tudo de volta num aparelho novo.</p>
+            </div>
+          </div>
+
+          <div class="mp-benefit">
+            <div class="mp-benefit-num">7</div>
+            <div>
+              <h3>Lixeira de treinos</h3>
+              <p>Apagou sem querer? Recupere treinos e exercícios em um toque.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="mp-price">
+          <p class="mp-price-main">A partir de <span>R$ 6,90 por mês</span></p>
+          <p>No plano anual sai por R$ 69,00 no Google Play e R$ 69,90 na App Store.</p>
+          <p><strong>7 dias grátis na primeira assinatura</strong> — a elegibilidade é definida pela loja.</p>
+          <p class="mp-fineprint">
+            A compra, a renovação e o cancelamento acontecem na Google Play ou na App Store. Assinar exige uma conta no
+            app, que é gratuita. O treino na tela bloqueada do iPhone precisa do iOS 17.6 ou superior e da permissão de
+            Atividades ao Vivo; o treino no relógio precisa de um relógio pareado com o celular e com o app instalado
+            nele.
           </p>
-          <div class="mp-stores">
+          <div class="mp-stores" style="margin-top: 1.5rem;">
             <a class="mp-store mp-store--primary"
               href="https://play.google.com/store/apps/details?id=com.wolfdeveloper.marcozero" target="_blank"
               rel="noopener">
-              <i class="fa fa-android" aria-hidden="true"></i> Google Play
+              <i class="fa fa-android" aria-hidden="true"></i> Baixar no Google Play
             </a>
             <a class="mp-store" href="https://apps.apple.com/app/id6802950482" target="_blank" rel="noopener">
-              <i class="fa fa-apple" aria-hidden="true"></i> App Store
+              <i class="fa fa-apple" aria-hidden="true"></i> Baixar na App Store
             </a>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ 7. FAQ ============================ -->
+    <section class="mp-section" id="faq">
+      <div class="mp-container">
+        <h2>Perguntas frequentes</h2>
+        <div class="mp-faq">
+
+          <details open>
+            <summary>O app é gratuito mesmo?</summary>
+            <p>É. Registrar treinos, montar fichas, usar os cronômetros, ver o gráfico de evolução e receber os
+              lembretes não custa nada, não tem anúncio e não tem limite de quantidade. A assinatura é opcional e
+              libera as sete vantagens listadas acima.</p>
+          </details>
+
+          <details>
+            <summary>Preciso de internet ou de criar uma conta?</summary>
+            <p>Não. O app guarda tudo no próprio aparelho e funciona sem sinal nenhum. A conta é opcional e serve
+              para guardar uma cópia dos seus treinos na nuvem: o envio acontece sozinho e de graça; a tela de backup
+              e a restauração num aparelho novo são Premium.</p>
+          </details>
+
+          <details>
+            <summary>O que exatamente muda com o Premium?</summary>
+            <p>O treino aparece na tela bloqueada e no relógio, você ganha os widgets da tela inicial, a imagem do
+              treino do dia para compartilhar, as análises avançadas com exportação em PDF, a restauração do backup na
+              nuvem e a lixeira de treinos. Nenhuma função gratuita deixa de existir se você não assinar.</p>
+          </details>
+
+          <details>
+            <summary>Como cancelo a assinatura?</summary>
+            <p>Pela própria loja — Google Play ou App Store —, quando quiser. Como a verificação é feita pela loja, a
+              mudança pode levar até sete dias para aparecer dentro do app.</p>
+          </details>
+
+          <details>
+            <summary>Funciona no Apple Watch e no Wear OS?</summary>
+            <p>Sim, com o Premium. O relógio mostra o dia inteiro e tem os mesmos controles: play, pause, registrar a
+              série e ajustar a carga. Ele continua funcionando longe do celular e sincroniza quando os dois voltam a
+              se falar.</p>
+          </details>
+
         </div>
       </div>
     </section>
@@ -210,6 +515,60 @@
       </nav>
     </div>
   </footer>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Meu Progresso",
+    "applicationCategory": "HealthApplication",
+    "operatingSystem": "Android, iOS",
+    "inLanguage": "pt-BR",
+    "description": "App de academia para registrar treinos série a série e acompanhar a progressão de carga. Funciona offline, sem anúncios e sem conta obrigatória.",
+    "url": "https://www.wolfdeveloper.com.br/meu-progresso/",
+    "image": "https://www.wolfdeveloper.com.br/img/meu-progresso/og-image.png",
+    "author": { "@type": "Organization", "name": "WolfDeveloper", "url": "https://www.wolfdeveloper.com.br" },
+    "offers": [
+      { "@type": "Offer", "price": "0", "priceCurrency": "BRL", "description": "Versão gratuita, sem anúncios" },
+      { "@type": "Offer", "price": "6.90", "priceCurrency": "BRL", "description": "Assinatura Premium mensal" },
+      { "@type": "Offer", "price": "69.00", "priceCurrency": "BRL", "description": "Assinatura Premium anual" }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "O app é gratuito mesmo?",
+        "acceptedAnswer": { "@type": "Answer", "text": "É. Registrar treinos, montar fichas, usar os cronômetros, ver o gráfico de evolução e receber os lembretes não custa nada, não tem anúncio e não tem limite de quantidade. A assinatura é opcional e libera as sete vantagens listadas na página." }
+      },
+      {
+        "@type": "Question",
+        "name": "Preciso de internet ou de criar uma conta?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Não. O app guarda tudo no próprio aparelho e funciona sem sinal nenhum. A conta é opcional e serve para guardar uma cópia dos seus treinos na nuvem: o envio acontece sozinho e de graça; a tela de backup e a restauração num aparelho novo são Premium." }
+      },
+      {
+        "@type": "Question",
+        "name": "O que exatamente muda com o Premium?",
+        "acceptedAnswer": { "@type": "Answer", "text": "O treino aparece na tela bloqueada e no relógio, você ganha os widgets da tela inicial, a imagem do treino do dia para compartilhar, as análises avançadas com exportação em PDF, a restauração do backup na nuvem e a lixeira de treinos. Nenhuma função gratuita deixa de existir se você não assinar." }
+      },
+      {
+        "@type": "Question",
+        "name": "Como cancelo a assinatura?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Pela própria loja — Google Play ou App Store —, quando quiser. Como a verificação é feita pela loja, a mudança pode levar até sete dias para aparecer dentro do app." }
+      },
+      {
+        "@type": "Question",
+        "name": "Funciona no Apple Watch e no Wear OS?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Sim, com o Premium. O relógio mostra o dia inteiro e tem os mesmos controles: play, pause, registrar a série e ajustar a carga. Ele continua funcionando longe do celular e sincroniza quando os dois voltam a se falar." }
+      }
+    ]
+  }
+  </script>
 
   <script>
     document.getElementById('mp-year').textContent = new Date().getFullYear();

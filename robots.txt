@@ -1,2 +1,4 @@
 User-agent: *
-Sitemap:https://wolfdevelloper.github.io/sitemap.xml
+Allow: /
+
+Sitemap: https://www.wolfdeveloper.com.br/sitemap.xml
